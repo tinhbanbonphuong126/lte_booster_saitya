@@ -26,6 +26,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::group(['namespace' => 'Admin'], function () {
         Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
             Route::resource('routes', 'RouteController');
+            Route::resource('regions', 'RegionController');
         });
     });
 });
