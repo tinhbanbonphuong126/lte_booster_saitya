@@ -12,19 +12,20 @@
 */
 
 
-
 Auth::routes();
 
 
 //All Route for Admin Management
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['middleware' => 'auth'], function () {
 
-    Route::group(['middleware' => 'auth'], function () {
+    Route::get('/', function () {
+        return 'Dashboard';
+    });
 
-        Route::get('/', function () {
-            return 'Dashboard';
+
+    Route::group(['namespace' => 'Admin'], function () {
+        Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+            Route::resource('routes', 'RouteController');
         });
-
     });
 });
-
