@@ -11,16 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-
-    return 'Here is Frontend Page';
-
-  return redirect('home');
-});
 
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
 
-Route::resource('routes', 'RouteController');
+//All Route for Admin Management
+Route::group(['prefix' => 'admin'], function () {
+
+    Route::group(['middleware' => 'auth'], function () {
+
+        Route::get('/', function () {
+            return 'Dashboard';
+        });
+
+    });
+});
+
