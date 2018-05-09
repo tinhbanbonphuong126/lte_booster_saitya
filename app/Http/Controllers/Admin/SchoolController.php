@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\Admin\CreateSchoolRequest;
 use App\Http\Requests\Admin\UpdateSchoolRequest;
+use App\Repositories\Admin\RegionRepository;
 use App\Repositories\Admin\SchoolRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
@@ -41,9 +42,11 @@ class SchoolController extends AppBaseController
      *
      * @return Response
      */
-    public function create()
+    public function create(RegionRepository $regionRepository)
     {
-        return view('admin.schools.create');
+        $regions = $regionRepository->pluck('name', 'id');
+
+        return view('admin.schools.create', compact('regions'));
     }
 
     /**

@@ -58,6 +58,6 @@ class School extends Model
      **/
     public function region()
     {
-        return $this->belongsTo(\App\Models\Admin\Region::class);
+        return $this->belongsTo(Region::class, 'region_id', 'id');
     }
 }

@@ -10,7 +10,7 @@
     @foreach($schools as $school)
         <tr>
             <td>{!! $school->name !!}</td>
-            <td>{!! $school->region_id !!}</td>
+            <td>{!! $school->region->name !!}</td>
             <td>
                 {!! Form::open(['route' => ['admin.schools.destroy', $school->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
