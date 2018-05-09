@@ -182,6 +182,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+
+        //My provider
+        //For seedings
+        Orangehill\Iseed\IseedServiceProvider::class,
+
     ],
 
     /*
