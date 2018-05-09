@@ -19,8 +19,9 @@
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
+        "orangehill/iseed": "dev-master",
         "phpunit/phpunit": "~5.7",
-        "orangehill/iseed": "dev-master"
+        "xethron/migrations-generator": "^2.0"
     },
     "autoload": {
         "classmap": [

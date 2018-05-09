@@ -188,6 +188,9 @@ return [
         //For seedings
         Orangehill\Iseed\IseedServiceProvider::class,
 
+        //Generate migration from exist table
+        Way\Generators\GeneratorsServiceProvider::class,
+        Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
     ],
 
     /*
