@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateStationsTable extends Migration {
+class CreateSchoolsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,11 +12,11 @@ class CreateStationsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('stations', function(Blueprint $table)
+		Schema::create('schools', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('name', 100);
-			$table->integer('route_id');
+			$table->integer('region_id')->unsigned()->nullable()->index('fk_school_region');
 			$table->timestamps();
 			$table->softDeletes();
 		});
@@ -30,7 +30,7 @@ class CreateStationsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('stations');
+		Schema::drop('schools');
 	}
 
 }
