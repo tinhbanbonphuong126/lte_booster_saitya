@@ -6,17 +6,18 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Route
+ * Class Region
  * @package App\Models\Admin
- * @version May 9, 2018, 3:45 pm UTC
+ * @version May 9, 2018, 5:05 pm UTC
  *
- * @property string route
+ * @property string name
+ * @property string img
  */
-class Route extends Model
+class Region extends Model
 {
     use SoftDeletes;
 
-    public $table = 'routes';
+    public $table = 'regions';
     
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
@@ -28,7 +29,8 @@ class Route extends Model
 
 
     public $fillable = [
-        'route'
+        'name',
+        'img'
     ];
 
     /**
@@ -38,7 +40,8 @@ class Route extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'route' => 'string'
+        'name' => 'string',
+        'img' => 'string'
     ];
 
     /**
