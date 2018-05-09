@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Route;
+use App\Models\Admin\Station;
 
-class UpdateRouteRequest extends FormRequest
+class UpdateStationRequest extends FormRequest
 {
 
     /**
@@ -25,6 +25,6 @@ class UpdateRouteRequest extends FormRequest
      */
     public function rules()
     {
-        return Route::$rules;
+        return Station::$rules;
     }
 }
