@@ -18,6 +18,7 @@ class CreateStationsTable extends Migration
             $table->string('name', 100);
             $table->integer('route_id');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

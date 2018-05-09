@@ -12,6 +12,9 @@
 */
 
 Route::get('/', function () {
+
+    return 'Here is Frontend Page';
+
   return redirect('home');
 });
 
@@ -19,3 +22,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::resource('routes', 'RouteController');

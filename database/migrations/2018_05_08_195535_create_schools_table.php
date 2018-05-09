@@ -18,6 +18,7 @@ class CreateSchoolsTable extends Migration
             $table->string('name', 100);
             $table->integer('region_id');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

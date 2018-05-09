@@ -16,6 +16,7 @@ class CreateBunjouchisTable extends Migration
         Schema::create('bunjouchis', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
