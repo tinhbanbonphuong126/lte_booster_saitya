@@ -12,8 +12,19 @@
 */
 
 
+use Illuminate\Support\Facades\Artisan;
+
 Auth::routes();
 
+
+Route::get("/", function() {
+
+    return 'Welcome';
+});
+
+Route::get("/home", function () {
+    return 'OK';
+});
 
 //All Route for Admin Management
 Route::group(['middleware' => 'auth'], function () {

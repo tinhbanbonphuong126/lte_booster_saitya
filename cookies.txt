@@ -1,0 +1,10 @@
+# HTTP Cookie File downloaded with cookies.txt by Genuinous @genuinous
+# This file can be used by wget, curl, aria2c and other standard compliant tools.
+# Usage Examples:
+#   1) wget -x --load-cookies cookies.txt "http://localhost:8080/home"
+#   2) curl --cookie cookies.txt "http://localhost:8080/home"
+#   3) aria2c --load-cookies cookies.txt "http://localhost:8080/home"
+#
+localhost	FALSE	/	FALSE	0	io	iHbsmb-CRpevpjtJAAAA
+localhost	FALSE	/	FALSE	1525994898	XSRF-TOKEN	eyJpdiI6IjBBS0k5Y1QwUmc4RmZ0T3dldHdlYUE9PSIsInZhbHVlIjoiKzc1dnhTaUxqaVFZTDd4YWdOWXVwbENmNTFZK3ZCSXZ1THFmVnhtYU9HRVlVeXhkZUZ3WVFIVXpTcXRNRzhqZ1FtWTM1VDR4alwvZHFwVEFCVjJVNWZnPT0iLCJtYWMiOiI3YmFlYjU2ZGMwNDllM2ZmYTIwNjM5ODNhZDM4OTllODExMmJjYTExYzY0MWUwZjA0NzRmZTFlMTc0NzUwNDk3In0%3D
+localhost	FALSE	/	FALSE	1525994898	laravel_session	eyJpdiI6ImpqT1VOTEZkWlwvbGJuQkMrVDVcLzhjdz09IiwidmFsdWUiOiJWS2c3YWFBTWhRcWd0UDYrd1wvNFwvcFdWelI3UFNraWVab1d0SzNIdHZQRkVsOTZ4TnlEQkRUcGpOUTNYdkRKbmVRMEJ3ZlBMSEpSRXJta2J3R08wRDRnPT0iLCJtYWMiOiJhMmM2NmM3NTdmMDc2YmUyZWM2NWZjMWNhNDA3NDU2ODRlZWU5ZTUwYzczNTVkMDZiMWUwZmFlYWYxNjM4MjQxIn0%3D

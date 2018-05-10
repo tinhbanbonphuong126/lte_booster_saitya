@@ -17,12 +17,13 @@ mix.browserSync({
         'resources/views/**/*.php',
         'app/**/*.php',
         'public/css/**/*.css',
-        'public/js/**/*.js'
+        'public/js/**/*.js',
+        'public/html/*.html'
     ]
 });
 
 
-mix.webpackConfig({devtool: "inline-source-map"});
+mix.webpackConfig({devtool: "source-map"});
 
 mix.js('resources/assets/js/app.js', 'public/js')
     .sourceMaps();
