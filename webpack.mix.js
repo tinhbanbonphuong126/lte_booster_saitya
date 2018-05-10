@@ -1,4 +1,4 @@
-const { mix } = require('laravel-mix');
+const {mix} = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +11,29 @@ const { mix } = require('laravel-mix');
  |
  */
 
+mix.browserSync({
+    proxy: 'localhost:8080',
+    files: [
+        'resources/views/**/*.php',
+        'app/**/*.php',
+        'public/css/**/*.css',
+        'public/js/**/*.js'
+    ]
+});
+
+
+mix.webpackConfig({devtool: "inline-source-map"});
+
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+    .sourceMaps();
+
+mix.sass('resources/assets/sass/app.scss', 'public/css')
+    .options({
+        processCssUrls: false,
+        autoprefixer: true,
+        postCss: [
+            require('postcss-css-variables')()
+        ],
+        outputStyle: 'compressed'
+    })
+    .sourceMaps();
