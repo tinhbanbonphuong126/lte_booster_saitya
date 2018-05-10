@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Station
  * @package App\Models\Admin
- * @version May 9, 2018, 5:38 pm UTC
+ * @version May 9, 2018, 7:32 pm UTC
  *
  * @property string name
  * @property integer route_id

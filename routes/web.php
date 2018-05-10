@@ -28,6 +28,7 @@ Route::group(['middleware' => 'auth'], function () {
             Route::resource('routes', 'RouteController');
             Route::resource('regions', 'RegionController');
             Route::resource('schools', 'SchoolController');
+            Route::resource('stations', 'StationController');
         });
     });
 });

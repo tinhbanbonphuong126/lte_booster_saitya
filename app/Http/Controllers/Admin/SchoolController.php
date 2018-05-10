@@ -31,7 +31,7 @@ class SchoolController extends AppBaseController
     public function index(Request $request)
     {
         $this->schoolRepository->pushCriteria(new RequestCriteria($request));
-        $schools = $this->schoolRepository->paginate(20);
+        $schools = $this->schoolRepository->orderBy('id', 'DESC')->paginate(20);
 
         return view('admin.schools.index')
             ->with('schools', $schools);
@@ -94,7 +94,7 @@ class SchoolController extends AppBaseController
      *
      * @return Response
      */
-    public function edit($id)
+    public function edit($id, RegionRepository $regionRepository)
     {
         $school = $this->schoolRepository->findWithoutFail($id);
 
@@ -104,7 +104,9 @@ class SchoolController extends AppBaseController
             return redirect(route('admin.schools.index'));
         }
 
-        return view('admin.schools.edit')->with('school', $school);
+        $regions = $regionRepository->pluck('name', 'id');
+
+        return view('admin.schools.edit')->with('school', $school)->with('regions', $regions);
     }
 
     /**

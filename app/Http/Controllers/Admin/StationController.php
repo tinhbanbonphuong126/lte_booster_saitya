@@ -30,7 +30,7 @@ class StationController extends AppBaseController
     public function index(Request $request)
     {
         $this->stationRepository->pushCriteria(new RequestCriteria($request));
-        $stations = $this->stationRepository->all();
+        $stations = $this->stationRepository->paginate(20);
 
         return view('admin.stations.index')
             ->with('stations', $stations);
