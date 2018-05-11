@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            地名
+            Price
         </h1>
    </section>
    <div class="content">
@@ -11,9 +11,9 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($region, ['route' => ['admin.regions.update', $region->id], 'method' => 'patch']) !!}
+                   {!! Form::model($price, ['route' => ['admin.prices.update', $price->id], 'method' => 'patch']) !!}
 
-                        @include('admin.regions.fields')
+                        @include('admin.prices.fields')
 
                    {!! Form::close() !!}
                </div>

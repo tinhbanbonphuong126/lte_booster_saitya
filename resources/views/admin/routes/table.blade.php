@@ -2,7 +2,7 @@
     <thead>
         <tr>
             <th>Route</th>
-            <th colspan="3">Action</th>
+            <th colspan="3">操作</th>
         </tr>
     </thead>
     <tbody>

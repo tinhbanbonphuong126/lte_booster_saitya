@@ -3,20 +3,15 @@
 @section('content')
     <section class="content-header">
         <h1>
-            地名
+            Price
         </h1>
     </section>
     <div class="content">
-        @include('adminlte-templates::common.errors')
         <div class="box box-primary">
-
             <div class="box-body">
-                <div class="row">
-                    {!! Form::open(['route' => 'admin.regions.store']) !!}
-
-                        @include('admin.regions.fields')
-
-                    {!! Form::close() !!}
+                <div class="row" style="padding-left: 20px">
+                    @include('admin.prices.show_fields')
+                    <a href="{!! route('admin.prices.index') !!}" class="btn btn-default">Back</a>
                 </div>
             </div>
         </div>
