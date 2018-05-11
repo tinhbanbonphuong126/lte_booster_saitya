@@ -100,7 +100,7 @@ class BunjouchiController extends AppBaseController
      *
      * @return Response
      */
-    public function edit($id)
+    public function edit($id ,RegionRepository $regionRepository, SchoolRepository $schoolRepository, RouteRepository $routeRepository, StationRepository $stationRepository)
     {
         $bunjouchi = $this->bunjouchiRepository->findWithoutFail($id);
 
@@ -110,7 +110,13 @@ class BunjouchiController extends AppBaseController
             return redirect(route('admin.bunjouchis.index'));
         }
 
-        return view('admin.bunjouchis.edit')->with('bunjouchi', $bunjouchi);
+        $regions = $regionRepository->pluck('name', 'id');
+        $schools = $schoolRepository->get(['id', 'name', 'region_id']);
+
+        $routes = $routeRepository->pluck('route', 'id');
+        $stations = $stationRepository->get(['id', 'name', 'route_id']);
+
+        return view('admin.bunjouchis.edit', compact('regions', 'schools', 'routes', 'stations'))->with('bunjouchi', $bunjouchi);
     }
 
     /**

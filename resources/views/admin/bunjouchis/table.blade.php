@@ -24,7 +24,7 @@
     <tbody>
     @foreach($bunjouchis as $key => $bunjouchi)
         <tr>
-            <tr>{{ $key + 1 }}</tr>
+            <td>{{ $key + 1 }}</td>
             <td>{!! $bunjouchi->title !!}</td>
             <td class="hidden">{!! $bunjouchi->map_url !!}</td>
             <td class="hidden">{!! $bunjouchi->document_url !!}</td>

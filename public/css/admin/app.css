@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+input.btn-primary[type='submit'] {
+  margin-left: 50px;
+}
+
+.m_show {
+  opacity: 1;
+}
+
+.m_show .box {
+  opacity: 1;
+}
+
+.m_show .box .box-body {
+  opacity: 1;
+}
+
+.m_show .box .box-body .row {
+  opacity: 1;
+}
+
+.m_show .box .box-body .row .form-group {
+  opacity: 1;
+}
+
+.m_show .box .box-body .row .form-group label {
+  opacity: 1;
+  font-size: 20px;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  width: 150px;
+}
+
+.m_show .box .box-body .row .form-group p {
+  opacity: 1;
+  font-size: 20px;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  display: inline-block;
+}
+
+
+/*# sourceMappingURL=app.css.map*/

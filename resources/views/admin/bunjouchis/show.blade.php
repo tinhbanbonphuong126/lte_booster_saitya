@@ -1,12 +1,14 @@
 @extends('layouts.app')
-
+@section('css')
+    <link rel="stylesheet" href="{{ asset('css/admin/bunjouchis/bunjouchis.css') }}">
+@endsection
 @section('content')
     <section class="content-header">
         <h1>
-            Bunjouchi
+            分譲地
         </h1>
     </section>
-    <div class="content">
+    <div class="content m_show">
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">

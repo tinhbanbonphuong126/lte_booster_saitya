@@ -90,5 +90,17 @@ class Bunjouchi extends Model
         
     ];
 
+
+    /**
+     * Relationship here
+     */
+
+    public function school() {
+        return $this->belongsTo(School::class, 'school_id', 'id');
+    }
+
+    public function station() {
+        return $this->belongsTo(Station::class, 'station_id', 'id');
+    }
     
 }

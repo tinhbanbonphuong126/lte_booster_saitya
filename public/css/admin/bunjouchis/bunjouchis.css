@@ -22,8 +22,34 @@
   opacity: 1;
 }
 
-.m_create {
+.m_show {
   opacity: 1;
+  padding: 50px 300px;
+}
+
+.m_create_edit label[for='status0'],
+.m_create_edit label[for='status1'] {
+  opacity: 1;
+  font-weight: normal;
+}
+
+.m_create_edit {
+  opacity: 1;
+}
+
+.m_create_edit form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin: -3px 0 0;
+  line-height: normal;
+}
+
+input#status1 {
+  margin-left: 43px;
 }
 
 

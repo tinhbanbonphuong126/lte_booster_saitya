@@ -1,10 +1,10 @@
 # HTTP Cookie File downloaded with cookies.txt by Genuinous @genuinous
 # This file can be used by wget, curl, aria2c and other standard compliant tools.
 # Usage Examples:
-#   1) wget -x --load-cookies cookies.txt "http://localhost:3000/html/index.html"
-#   2) curl --cookie cookies.txt "http://localhost:3000/html/index.html"
-#   3) aria2c --load-cookies cookies.txt "http://localhost:3000/html/index.html"
+#   1) wget -x --load-cookies cookies.txt "http://localhost:3000/admin/bunjouchis/7"
+#   2) curl --cookie cookies.txt "http://localhost:3000/admin/bunjouchis/7"
+#   3) aria2c --load-cookies cookies.txt "http://localhost:3000/admin/bunjouchis/7"
 #
-localhost	FALSE	/	FALSE	1526027742	XSRF-TOKEN	eyJpdiI6Im03OFBUbTNBZG1sdUJmNXo5M1V4RkE9PSIsInZhbHVlIjoiaFQ1aytkNlpzdUdcL1JJTHNEVzl0dGFkYVRFdzBacUFtb3NSTTdROFZUcWRmRlJHdmxlMnJpTmRCT0VuMW5CWXM0dlZmXC9EZ2hvZmx0a1lob0tKTkh3QT09IiwibWFjIjoiZTExMjQ3MDZhZGI1OWYxNzEwYTNhNDM1MjYzODI5NTgyOTVlNDNkMGJmY2M3MWZlOGQxZWEyYzBhNjM5MjNmMiJ9
-localhost	FALSE	/	FALSE	1526027742	laravel_session	eyJpdiI6IldNT0FvWnBRemhEWkVNVGdycXVPbmc9PSIsInZhbHVlIjoiSHFTWUNHaU80cHA4ZlVrZ0FIQmpVS2pNUnJLV3VUTDYzQjhqT0Y2VEE2NVlnSnM5XC9TZ1MrR1J6XC9sMXUyUnpnbE9aem9CcnNCaW5WSis4YzlzVTE2QT09IiwibWFjIjoiZmQxODZkYWUzYjM3NjgyYjRjMDdlOTYzY2VlZTJlZGY0ZjQ3NjQ5NjgxNzRmNzEyNDM2ZmI1YzNkOWFhMzM4YSJ9
-localhost	FALSE	/	FALSE	0	io	xm7mCR7N7a2Pm6KNAABt
+localhost	FALSE	/	FALSE	1526777121	XSRF-TOKEN	eyJpdiI6Imt3NW9jUytEYWRZMGQrMjlBYzdWVEE9PSIsInZhbHVlIjoiZUNtQzF0ekNteFd6eWZiaFNreFE1UUdvZWJKRGlkNENIZlNsVmdTdmJWM21Camx0K2ZHbFhMRlpiUWlXQ1BJRGhRNmR2NGdVMlwvNFNheVBGSWVIQURRPT0iLCJtYWMiOiJmZWRmMmYyNTE1YTEyYzIzMzA3YmUzYjQyMWM5NWJlZmM1YTFjNmI0ZGNjYzE0NDVkMTJlMzNhMTVkMjA1ZDZhIn0%3D
+localhost	FALSE	/	FALSE	1526777121	laravel_session	eyJpdiI6IlJrd1B1ckhBTWJXQ2xZUmpDOHhTOUE9PSIsInZhbHVlIjoiS21QRGpzT1JpdFR6ZTlWaWNpRVNPTU5RcFg2bHNHNHVkWW5WNWF1aEY3UVJacENtTzY5MHlpTUJBZVM1dmZVWUEzXC9JU2xjeURFcGZzTStQUktlNFp3PT0iLCJtYWMiOiI1MDczM2Q0ZTY2YWI3NzE1MDY2Y2I4OTg0NWRlYTM2MzEwMjA0NDU4NmJhYTlmNDUzY2M5YTNmZmM1N2IxZDEzIn0%3D
+localhost	FALSE	/	FALSE	0	io	_5Qsfvp6amPxciynAAAD

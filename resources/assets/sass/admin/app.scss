@@ -1,0 +1,52 @@
+
+// Fonts
+//@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+//
+// Variables
+@import "../variables";
+//
+//// Bootstrap
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+//More common css
+input.btn-primary[type='submit'] {
+  margin-left: 50px;
+}
+
+
+//CRUD COMMON SCSS
+.m_show {
+  opacity: 1;
+
+  .box {
+    opacity: 1;
+
+    .box-body {
+      opacity: 1;
+
+      .row {
+        opacity: 1;
+
+        .form-group {
+          opacity: 1;
+
+          label {
+            opacity: 1;
+            font-size: 20px;
+            font-family: $font_admin;
+            width: 150px;
+
+          }
+          p {
+            opacity: 1;
+            font-size: 20px;
+            font-family: $font_admin;
+
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,12 @@
 <?php
 
+/**
+ * Bunjouchi Status
+ */
+function bunjouchiStatus($status) {
+    if(!$status) {
+        return '分譲中';
+    }
 
-
-function hello_world()
-{
-    // Write function here.
+    return '完売御礼';
 }

@@ -1,4 +1,8 @@
 @extends('layouts.app')
+@section('css')
+    <link rel="stylesheet" href="{{ asset('css/admin/bunjouchis/bunjouchis.css') }}">
+@endsection
+
 
 @section('content')
     <section class="content-header">
@@ -6,13 +10,13 @@
             分譲地登録
         </h1>
     </section>
-    <div class="content m_create">
+    <div class="content m_create_edit m_create">
         @include('adminlte-templates::common.errors')
         <div class="box box-primary">
 
             <div class="box-body">
                 <div class="row">
-                    {!! Form::open(['route' => 'admin.bunjouchis.store']) !!}
+                    {!! Form::open(['route' => 'admin.bunjouchis.store', 'class' => 'form-horizontal']) !!}
 
                         @include('admin.bunjouchis.fields')
 

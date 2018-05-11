@@ -63,37 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */
-/***/ (function(module, exports) {
-
-
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
-// require('./bootstrap');
-
-// window.Vue = require('vue');
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-// Vue.component('example', require('./components/Example.vue'));
-//
-// const app = new Vue({
-//     el: '#app'
-// });
-
-/***/ }),
+/* 0 */,
 /* 1 */
 /***/ (function(module, exports) {
 
@@ -107,13 +81,19 @@
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(0);
+__webpack_require__(3);
 __webpack_require__(1);
 module.exports = __webpack_require__(2);
 
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=mix.js.map
