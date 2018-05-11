@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 
 class CurlGet extends Command
 {
@@ -11,7 +12,7 @@ class CurlGet extends Command
      *
      * @var string
      */
-    protected $signature = 'curl:admin {table}';
+    protected $signature = 'curl:admin {table} {action}';
 
     /**
      * The console command description.
@@ -37,6 +38,6 @@ class CurlGet extends Command
      */
     public function handle()
     {
-        shell_exec('curl --cookie cookies.txt "http://localhost:8080/admin/'. $this->argument('table') . '" -o public/html/index.html');
+        shell_exec('curl --cookie cookies.txt "http://localhost:8080/admin/'. $this->argument('table') . '/' . $this->argument('action') . '" -o public/html/index.html');
     }
 }

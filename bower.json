@@ -1,0 +1,17 @@
+{
+  "name": "laravel",
+  "description": "satya",
+  "main": "",
+  "authors": [
+    "Que Pham <tinhbanbonphuong126@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tinhbanbonphuong126/lte_booster_saitya",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

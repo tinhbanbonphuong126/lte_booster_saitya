@@ -24,6 +24,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             1 => 
             array (
@@ -32,6 +33,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             2 => 
             array (
@@ -40,6 +42,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             3 => 
             array (
@@ -48,6 +51,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             4 => 
             array (
@@ -56,6 +60,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             5 => 
             array (
@@ -64,6 +69,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             6 => 
             array (
@@ -72,6 +78,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             7 => 
             array (
@@ -80,6 +87,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             8 => 
             array (
@@ -88,6 +96,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             9 => 
             array (
@@ -96,6 +105,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             10 => 
             array (
@@ -104,6 +114,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             11 => 
             array (
@@ -112,6 +123,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             12 => 
             array (
@@ -120,6 +132,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             13 => 
             array (
@@ -128,6 +141,7 @@ class RegionsTableSeeder extends Seeder
                 'img' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
         ));
         

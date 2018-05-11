@@ -6,6 +6,10 @@ use App\Http\Requests\Admin\CreateBunjouchiRequest;
 use App\Http\Requests\Admin\UpdateBunjouchiRequest;
 use App\Repositories\Admin\BunjouchiRepository;
 use App\Http\Controllers\AppBaseController;
+use App\Repositories\Admin\RegionRepository;
+use App\Repositories\Admin\RouteRepository;
+use App\Repositories\Admin\SchoolRepository;
+use App\Repositories\Admin\StationRepository;
 use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
@@ -41,9 +45,14 @@ class BunjouchiController extends AppBaseController
      *
      * @return Response
      */
-    public function create()
+    public function create(RegionRepository $regionRepository, SchoolRepository $schoolRepository, RouteRepository $routeRepository, StationRepository $stationRepository)
     {
-        return view('admin.bunjouchis.create');
+        $regions = $regionRepository->pluck('name', 'id');
+        $schools = $schoolRepository->get(['id', 'name', 'region_id']);
+        $routes = $routeRepository->pluck('route', 'id');
+        $stations = $stationRepository->get(['id', 'name', 'route_id']);
+
+        return view('admin.bunjouchis.create', compact('regions', 'schools', 'routes', 'stations'));
     }
 
     /**

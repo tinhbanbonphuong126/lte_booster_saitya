@@ -70,15 +70,36 @@
     {!! Form::text('dealing_status', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Region Id Field -->
+
+<div class="form-group col-sm-6">
+    {!! Form::label('region_id', '地名: ') !!}
+    {!! Form::select('region_id', $regions, null, ['class' => 'form-control', 'placeholder' => '地名を選択してください']) !!}
+</div>
+
 <!-- School Id Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('school_id', '中学校区: ') !!}
-    {!! Form::number('school_id', null, ['class' => 'form-control']) !!}
+    {!! Form::label('school_id', '中学校区: ') !!}u
+    <select name="school_id" id="school_id" class="form-control">
+        @foreach($schools as $school)
+            <option value="{{ $school->id }}" data-chained="{{ $school->region_id }}">{{ $school->name }}</option>
+        @endforeach
+    </select>
 </div>
 <!-- Station Id Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('station_id', '路線名: ') !!}
-    {!! Form::number('station_id', null, ['class' => 'form-control']) !!}
+    {!! Form::label('route_id', '路線名: ') !!}
+    {!! Form::select('route_id', $routes, null, ['class' => 'form-control', 'placeholder' => '路線名を選択してください']) !!}
+</div>
+
+<!-- Station Id Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('station_id', '駅名: ') !!}
+    <select name="station_id" id="station_id" class="form-control">
+        @foreach($stations as $station)
+            <option value="{{ $station->id }}" data-chained="{{ $station->route_id }}">{{ $station->name }}</option>
+        @endforeach
+    </select>
 </div>
 
 <!-- Status Field -->
@@ -89,6 +110,6 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('admin.bunjouchis.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('保存', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('admin.bunjouchis.index') !!}" class="btn btn-default">キャンセル</a>
 </div>

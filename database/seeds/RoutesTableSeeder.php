@@ -23,6 +23,7 @@ class RoutesTableSeeder extends Seeder
                 'route' => '予讃線',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             1 => 
             array (
@@ -30,6 +31,7 @@ class RoutesTableSeeder extends Seeder
                 'route' => '土讃線',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             2 => 
             array (
@@ -37,6 +39,7 @@ class RoutesTableSeeder extends Seeder
                 'route' => '高徳線',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             3 => 
             array (
@@ -44,6 +47,7 @@ class RoutesTableSeeder extends Seeder
                 'route' => '琴電（琴平線）',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             4 => 
             array (
@@ -51,6 +55,7 @@ class RoutesTableSeeder extends Seeder
                 'route' => '琴電（長尾線）',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             5 => 
             array (
@@ -58,6 +63,7 @@ class RoutesTableSeeder extends Seeder
                 'route' => '琴電（志度線）',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
         ));
         

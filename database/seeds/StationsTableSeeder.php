@@ -24,6 +24,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             1 => 
             array (
@@ -32,6 +33,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             2 => 
             array (
@@ -40,6 +42,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             3 => 
             array (
@@ -48,6 +51,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             4 => 
             array (
@@ -56,6 +60,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             5 => 
             array (
@@ -64,6 +69,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             6 => 
             array (
@@ -72,6 +78,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             7 => 
             array (
@@ -80,6 +87,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             8 => 
             array (
@@ -88,6 +96,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             9 => 
             array (
@@ -96,6 +105,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             10 => 
             array (
@@ -104,6 +114,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             11 => 
             array (
@@ -112,6 +123,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             12 => 
             array (
@@ -120,6 +132,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             13 => 
             array (
@@ -128,6 +141,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 2,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             14 => 
             array (
@@ -136,6 +150,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 2,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             15 => 
             array (
@@ -144,6 +159,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 3,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             16 => 
             array (
@@ -152,6 +168,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 3,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             17 => 
             array (
@@ -160,6 +177,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 3,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             18 => 
             array (
@@ -168,6 +186,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 3,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             19 => 
             array (
@@ -176,6 +195,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 3,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             20 => 
             array (
@@ -184,6 +204,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 3,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             21 => 
             array (
@@ -192,6 +213,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 3,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             22 => 
             array (
@@ -200,6 +222,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 3,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             23 => 
             array (
@@ -208,6 +231,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 3,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             24 => 
             array (
@@ -216,6 +240,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             25 => 
             array (
@@ -224,6 +249,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             26 => 
             array (
@@ -232,6 +258,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             27 => 
             array (
@@ -240,6 +267,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             28 => 
             array (
@@ -248,6 +276,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             29 => 
             array (
@@ -256,6 +285,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             30 => 
             array (
@@ -264,6 +294,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             31 => 
             array (
@@ -272,6 +303,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             32 => 
             array (
@@ -280,6 +312,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 5,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             33 => 
             array (
@@ -288,6 +321,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 5,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             34 => 
             array (
@@ -296,6 +330,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 5,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             35 => 
             array (
@@ -304,6 +339,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 6,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             36 => 
             array (
@@ -312,6 +348,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 6,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
             37 => 
             array (
@@ -320,6 +357,7 @@ class StationsTableSeeder extends Seeder
                 'route_id' => 6,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'deleted_at' => NULL,
             ),
         ));
         

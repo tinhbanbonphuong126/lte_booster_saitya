@@ -19,5 +19,9 @@ class DatabaseSeeder extends Seeder
         $this->call(SchoolsTableSeeder::class);
         $this->call(RoutesTableSeeder::class);
         $this->call(StationsTableSeeder::class);
+        $this->call(BunjouchisTableSeeder::class);
+        $this->call(MigrationsTableSeeder::class);
+        $this->call(PasswordResetsTableSeeder::class);
+        $this->call(PricesTableSeeder::class);
     }
 }

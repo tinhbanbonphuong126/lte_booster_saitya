@@ -1,10 +1,10 @@
 # HTTP Cookie File downloaded with cookies.txt by Genuinous @genuinous
 # This file can be used by wget, curl, aria2c and other standard compliant tools.
 # Usage Examples:
-#   1) wget -x --load-cookies cookies.txt "http://localhost:8080/admin/bunjouchis"
-#   2) curl --cookie cookies.txt "http://localhost:8080/admin/bunjouchis"
-#   3) aria2c --load-cookies cookies.txt "http://localhost:8080/admin/bunjouchis"
+#   1) wget -x --load-cookies cookies.txt "http://localhost:3000/html/index.html"
+#   2) curl --cookie cookies.txt "http://localhost:3000/html/index.html"
+#   3) aria2c --load-cookies cookies.txt "http://localhost:3000/html/index.html"
 #
-localhost	FALSE	/	FALSE	0	io	jOXvcKzlrF2vfGtdAABk
-localhost	FALSE	/	FALSE	1526014729	XSRF-TOKEN	eyJpdiI6InFmWTRoeXY4MXJwVXY3R3ZNWStYakE9PSIsInZhbHVlIjoiMFRMdXU0bitCQmlwNGQzTm1ERDhWeGIzTTAzZzMzalwvZ0VOS1VRSlRxamhMVGhnNFVpQkVmQnRteE8wdktUeFFmc2EzZDFNeTROYjZsdWF2cXFMNkNBPT0iLCJtYWMiOiJhYjlkNWQ1MGY2MTM5ZjA5NTYxY2IyYTAwZjMxZTQwMDM3NzUzN2Y3ZDhhNTJkNTU3MTcyNzU4MGNiMTg3ZDc3In0%3D
-localhost	FALSE	/	FALSE	1526014729	laravel_session	eyJpdiI6InFmUGVhdFE5UVwvTTBKNUc0MHN0S2tnPT0iLCJ2YWx1ZSI6IlNcLzNjdEU0V0ZLWms1SlY0bGZvT2pKMUhLOWVLMzJPdkxyNnN1Vm5EbnRzQ1pmTHhzQk5EaDFJM0RYc0hnZ0N4UjFURHJ0UFJqdlM2YkVDaUFMMDg2dz09IiwibWFjIjoiYWEyYzRkMTU3ZmZkYmNjMjg5NzRkOTk2MzYxODYwNzNjN2U2OGMyYjhkNDQzY2Q1MTlhZDMyNGM0MzAxMWNkMyJ9
+localhost	FALSE	/	FALSE	1526027742	XSRF-TOKEN	eyJpdiI6Im03OFBUbTNBZG1sdUJmNXo5M1V4RkE9PSIsInZhbHVlIjoiaFQ1aytkNlpzdUdcL1JJTHNEVzl0dGFkYVRFdzBacUFtb3NSTTdROFZUcWRmRlJHdmxlMnJpTmRCT0VuMW5CWXM0dlZmXC9EZ2hvZmx0a1lob0tKTkh3QT09IiwibWFjIjoiZTExMjQ3MDZhZGI1OWYxNzEwYTNhNDM1MjYzODI5NTgyOTVlNDNkMGJmY2M3MWZlOGQxZWEyYzBhNjM5MjNmMiJ9
+localhost	FALSE	/	FALSE	1526027742	laravel_session	eyJpdiI6IldNT0FvWnBRemhEWkVNVGdycXVPbmc9PSIsInZhbHVlIjoiSHFTWUNHaU80cHA4ZlVrZ0FIQmpVS2pNUnJLV3VUTDYzQjhqT0Y2VEE2NVlnSnM5XC9TZ1MrR1J6XC9sMXUyUnpnbE9aem9CcnNCaW5WSis4YzlzVTE2QT09IiwibWFjIjoiZmQxODZkYWUzYjM3NjgyYjRjMDdlOTYzY2VlZTJlZGY0ZjQ3NjQ5NjgxNzRmNzEyNDM2ZmI1YzNkOWFhMzM4YSJ9
+localhost	FALSE	/	FALSE	0	io	xm7mCR7N7a2Pm6KNAABt

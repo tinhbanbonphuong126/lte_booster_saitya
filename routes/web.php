@@ -13,6 +13,7 @@
 
 
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\DB;
 
 Auth::routes();
 
@@ -24,6 +25,13 @@ Route::get("/", function() {
 
 Route::get("/home", function () {
     return 'OK';
+});
+
+Route::get("/list", function() {
+    $tables = DB::select('SHOW TABLES');
+    foreach ($tables as $table) {
+        echo $table->Tables_in_satya_db . ',';
+    }
 });
 
 //All Route for Admin Management

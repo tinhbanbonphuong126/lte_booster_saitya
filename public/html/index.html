@@ -17,8 +17,7 @@
 
     <link rel="stylesheet" href="http://localhost:8080/css/admin/bunjouchis/bunjouchis.css">
 
-        <link rel="stylesheet" href="/css/admin/bunjouchis/bunjouchis.css">
-
+    
 </head>
 
 <body class="skin-blue sidebar-mini">
@@ -143,50 +142,228 @@
 </aside><!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
             <section class="content-header">
-        <h1 class="pull-left">Bunjouchis</h1>
-        <h1 class="pull-right">
-           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="http://localhost:8080/admin/bunjouchis/create">Add New</a>
+        <h1>
+            分譲地登録
         </h1>
     </section>
-    <div class="content m_index">
-        <div class="clearfix"></div>
+    <div class="content m_create">
+                <div class="box box-primary">
 
-        
-        <div class="clearfix"></div>
-        <div class="box box-primary">
             <div class="box-body">
-                    <table class="table table-responsive" id="bunjouchis-table">
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>タイトル</th>
-        <th>区画図</th>
-        <th>資料</th>
-        <th>住所</th>
-        <th>土地面積</th>
-        <th>地目</th>
-        <th>総区画</th>
-        <th>建ぺい率</th>
-        <th>容積率</th>
-        <th>用途地域</th>
-        <th>排水</th>
-        <th>取引態様</th>
-        <th>中学校区</th>
-        <th>駅名</th>
-        <th>分譲地状態</th>
-        <th colspan="3">操作</th>
-    </tr>
-    </thead>
-    <tbody>
-        </tbody>
-</table>            </div>
-        </div>
-        <div class="text-center">
-        
-        <div class="row">
-    
+                <div class="row">
+                    <form method="POST" action="http://localhost:8080/admin/bunjouchis" accept-charset="UTF-8"><input name="_token" type="hidden" value="4hRyVsdealNt9AWv7IBImUkpceiQMO5wc1Vj1ums">
+
+                        <!-- Title Field -->
+<div class="form-group col-sm-6">
+    <label for="title">タイトル: </label>
+    <input class="form-control" name="title" type="text" id="title">
 </div>
 
+<!-- Map Url Field -->
+<div class="form-group col-sm-6">
+    <label for="map_url">区画図: </label>
+    <input class="form-control" name="map_url" type="text" id="map_url">
+</div>
+
+<!-- Document Url Field -->
+<div class="form-group col-sm-6">
+    <label for="document_url">資料: </label>
+    <input class="form-control" name="document_url" type="text" id="document_url">
+</div>
+
+<!-- Address Field -->
+<div class="form-group col-sm-6">
+    <label for="address">住所:</label>
+    <input class="form-control" name="address" type="text" id="address">
+</div>
+
+<!-- Land Area Field -->
+<div class="form-group col-sm-6">
+    <label for="land_area">土地面積:</label>
+    <input class="form-control" name="land_area" type="text" id="land_area">
+</div>
+
+<!-- Ground Field -->
+<div class="form-group col-sm-6">
+    <label for="ground">総区画:</label>
+    <input class="form-control" name="総区画" type="text">
+</div>
+
+<!-- Total Parcel Field -->
+<div class="form-group col-sm-6">
+    <label for="総区画">総区画:</label>
+    <input class="form-control" name="total_parcel" type="text">
+</div>
+
+<!-- Construction Pay Rate Field -->
+<div class="form-group col-sm-6">
+    <label for="construction_pay_rate">建ペイ率: </label>
+    <input class="form-control" name="construction_pay_rate" type="text" id="construction_pay_rate">
+</div>
+
+<!-- Floor Area Ratio Field -->
+<div class="form-group col-sm-6">
+    <label for="floor_area_ratio">容積率</label>
+    <input class="form-control" name="floor_area_ratio" type="text" id="floor_area_ratio">
+</div>
+
+<!-- Usage Area Field -->
+<div class="form-group col-sm-6">
+    <label for="usage_area">用途地域:</label>
+    <input class="form-control" name="usage_area" type="text" id="usage_area">
+</div>
+
+<!-- Drainage Field -->
+<div class="form-group col-sm-6">
+    <label for="drainage">排水:</label>
+    <input class="form-control" name="drainage" type="text" id="drainage">
+</div>
+
+<!-- Dealing Status Field -->
+<div class="form-group col-sm-6">
+    <label for="dealing_status">取引態様:</label>
+    <input class="form-control" name="dealing_status" type="text" id="dealing_status">
+</div>
+
+<!-- Region Id Field -->
+<div class="form-group col-sm-6">
+    <label for="region_id">地名: </label>
+    <select class="form-control" id="region_id" name="region_id"><option value="1">東かがわ市</option><option value="2">三木町</option><option value="3">さぬき市</option><option value="4">高松市</option><option value="5">坂出市</option><option value="6">宇多津町</option><option value="7">綾川町</option><option value="8">丸亀市</option><option value="9">多度津町</option><option value="10">琴平町</option><option value="11">まんのう町</option><option value="12">善通寺市</option><option value="13">三豊市</option><option value="14">観音寺市</option></select>
+</div>
+
+<!-- School Id Field -->
+<div class="form-group col-sm-6">
+    <label for="school_id">中学校区: </label>
+    <select name="school_id" id="school_id" class="form-control">
+                    <option value="1" data-chained="1">引田中学校</option>
+                    <option value="2" data-chained="1">白鳥中学校</option>
+                    <option value="3" data-chained="1">大川中学校</option>
+                    <option value="4" data-chained="2">三木中学校</option>
+                    <option value="5" data-chained="3">さぬき南中学校</option>
+                    <option value="6" data-chained="3">志度中学校</option>
+                    <option value="7" data-chained="3">長尾中学校</option>
+                    <option value="8" data-chained="4">高松北中学校</option>
+                    <option value="9" data-chained="4">桜町中学校</option>
+                    <option value="10" data-chained="4">紫雲中学校</option>
+                    <option value="11" data-chained="4">紫雲中学校</option>
+                    <option value="12" data-chained="4">玉藻中学校</option>
+                    <option value="13" data-chained="4">高松第一中学校</option>
+                    <option value="14" data-chained="4">鶴尾中学校</option>
+                    <option value="15" data-chained="4">屋島中学校</option>
+                    <option value="16" data-chained="4">協和中学校</option>
+                    <option value="17" data-chained="4">龍雲中学校</option>
+                    <option value="18" data-chained="4">勝賀中学校</option>
+                    <option value="19" data-chained="4">一宮中学校</option>
+                    <option value="20" data-chained="4">香東中学校</option>
+                    <option value="21" data-chained="4">下笠居中学校</option>
+                    <option value="22" data-chained="4">山田中学校</option>
+                    <option value="23" data-chained="4">太田中学校</option>
+                    <option value="24" data-chained="4">古高松中学校</option>
+                    <option value="25" data-chained="4">木太中学校</option>
+                    <option value="26" data-chained="4">塩江中学校</option>
+                    <option value="27" data-chained="4">庵治中学校</option>
+                    <option value="28" data-chained="4">牟礼中学校</option>
+                    <option value="29" data-chained="4">香川第一中学校</option>
+                    <option value="30" data-chained="4">香南中学校</option>
+                    <option value="31" data-chained="4">国分寺中学校</option>
+                    <option value="32" data-chained="4">香川大学教育学部附属高松中学校</option>
+                    <option value="33" data-chained="5">坂出中学校</option>
+                    <option value="34" data-chained="5">東部中学校</option>
+                    <option value="35" data-chained="5">白峰中学校</option>
+                    <option value="36" data-chained="5">瀬居中学校</option>
+                    <option value="37" data-chained="5">香川大学教育学部附属坂出中学校</option>
+                    <option value="38" data-chained="6">宇多津中学校</option>
+                    <option value="39" data-chained="7">綾上中学校</option>
+                    <option value="40" data-chained="7">綾南中学校</option>
+                    <option value="41" data-chained="8">東中学校</option>
+                    <option value="42" data-chained="8">西中学校</option>
+                    <option value="43" data-chained="8">南中学校</option>
+                    <option value="44" data-chained="8">綾歌中学校</option>
+                    <option value="45" data-chained="8">飯山中学校</option>
+                    <option value="46" data-chained="9">多度津中学校</option>
+                    <option value="47" data-chained="10">琴平中学校</option>
+                    <option value="58" data-chained="11">満濃中学校</option>
+                    <option value="59" data-chained="12">西中学校</option>
+                    <option value="60" data-chained="12">東中学校</option>
+                    <option value="61" data-chained="13">高瀬中学校</option>
+                    <option value="62" data-chained="13">三野津中学校</option>
+                    <option value="63" data-chained="13">豊中中学校</option>
+                    <option value="64" data-chained="13">詫間中学校</option>
+                    <option value="65" data-chained="13">仁尾中学校</option>
+                    <option value="66" data-chained="13">和光中学校</option>
+                    <option value="67" data-chained="13">三豊市観音寺市学校組合立 三豊中学校</option>
+                    <option value="68" data-chained="14">観音寺中学校</option>
+                    <option value="69" data-chained="14">中部中学校</option>
+                    <option value="70" data-chained="14">大野原中学校</option>
+                    <option value="71" data-chained="14">豊浜中学校</option>
+            </select>
+</div>
+<!-- Station Id Field -->
+<div class="form-group col-sm-6">
+    <label for="route_id">路線名: </label>
+    <select class="form-control" id="route_id" name="route_id"><option value="1">予讃線</option><option value="2">土讃線</option><option value="3">高徳線</option><option value="4">琴電（琴平線）</option><option value="5">琴電（長尾線）</option><option value="6">琴電（志度線）</option></select>
+</div>
+
+<!-- Station Id Field -->
+<div class="form-group col-sm-6">
+    <label for="station_id">駅名: </label>
+    <select name="station_id" id="station_id" class="form-control">
+                    <option value="1" data-chained="1">高松</option>
+                    <option value="2" data-chained="1">香西</option>
+                    <option value="3" data-chained="1">鬼無</option>
+                    <option value="4" data-chained="1">端岡</option>
+                    <option value="5" data-chained="1">国分</option>
+                    <option value="6" data-chained="1">坂出</option>
+                    <option value="7" data-chained="1">宇多津</option>
+                    <option value="8" data-chained="1">丸亀</option>
+                    <option value="9" data-chained="1">多度津</option>
+                    <option value="10" data-chained="1">詫間</option>
+                    <option value="11" data-chained="1">高瀬</option>
+                    <option value="12" data-chained="1">観音寺</option>
+                    <option value="13" data-chained="1">豊浜</option>
+                    <option value="14" data-chained="2">善通寺</option>
+                    <option value="15" data-chained="2">琴平</option>
+                    <option value="16" data-chained="3">栗林</option>
+                    <option value="17" data-chained="3">木太町</option>
+                    <option value="18" data-chained="3">屋島</option>
+                    <option value="19" data-chained="3">讃岐牟礼</option>
+                    <option value="20" data-chained="3">志度</option>
+                    <option value="21" data-chained="3">オレンジタウン</option>
+                    <option value="22" data-chained="3">三本松</option>
+                    <option value="23" data-chained="3">讃岐白鳥</option>
+                    <option value="24" data-chained="3">引田</option>
+                    <option value="25" data-chained="4">瓦町</option>
+                    <option value="26" data-chained="4">仏生山</option>
+                    <option value="27" data-chained="4">円座</option>
+                    <option value="28" data-chained="4">岡本</option>
+                    <option value="29" data-chained="4">陶</option>
+                    <option value="30" data-chained="4">滝宮</option>
+                    <option value="31" data-chained="4">岡田</option>
+                    <option value="32" data-chained="4">琴電琴平</option>
+                    <option value="33" data-chained="5">元山</option>
+                    <option value="34" data-chained="5">高田</option>
+                    <option value="35" data-chained="5">長尾</option>
+                    <option value="36" data-chained="6">琴電屋島</option>
+                    <option value="37" data-chained="6">八栗</option>
+                    <option value="38" data-chained="6">琴電志度</option>
+            </select>
+</div>
+
+<!-- Status Field -->
+<div class="form-group col-sm-6">
+    <label for="status">Status:</label>
+    <input class="form-control" name="status" type="number" id="status">
+</div>
+
+<!-- Submit Field -->
+<div class="form-group col-sm-12">
+    <input class="btn btn-primary" type="submit" value="Save">
+    <a href="http://localhost:8080/admin/bunjouchis" class="btn btn-default">Cancel</a>
+</div>
+
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     </div>
@@ -210,5 +387,15 @@
 
 <script src="http://localhost:8080/js/app.js"></script>
 
+    <script type="text/javascript" src="http://localhost:8080/plugins/chained/jquery.chained.js"></script>
+    <script type="text/javascript">
+        $(function() {
+          // jQuery goes here...
+
+            alert('hello world');
+            $("#school_id").chained("#region_id");
+            $("#station_id").chained("#route_id");
+        });
+    </script>
 </body>
 </html>

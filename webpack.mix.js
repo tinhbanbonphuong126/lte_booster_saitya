@@ -25,8 +25,6 @@ mix.browserSync({
 
 mix.webpackConfig({devtool: "source-map"});
 
-mix.js('resources/assets/js/app.js', 'public/js')
-    .sourceMaps();
 
 mix.sass('resources/assets/sass/app.scss', 'public/css')
     .sass('resources/assets/sass/admin/bunjouchis/bunjouchis.scss', 'public/css/admin/bunjouchis')
@@ -38,4 +36,11 @@ mix.sass('resources/assets/sass/app.scss', 'public/css')
         ],
         outputStyle: 'compressed'
     })
+    .sourceMaps();
+
+
+
+//Combine jQuery
+mix.js('').sourceMaps();
+mix.js('resources/assets/js/app.js', 'public/js')
     .sourceMaps();
