@@ -50,5 +50,13 @@ class Route extends Model
         
     ];
 
-    
+
+
+    /**
+     * Relationship
+     */
+
+    public function station() {
+        return $this->hasMany(Station::class, 'route_id', 'id');
+    }
 }

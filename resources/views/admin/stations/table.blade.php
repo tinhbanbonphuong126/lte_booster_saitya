@@ -2,7 +2,7 @@
     <thead>
         <tr>
             <th>Name</th>
-        <th>Route Id</th>
+            <th>Route Id</th>
             <th colspan="3">Action</th>
         </tr>
     </thead>
@@ -10,7 +10,7 @@
     @foreach($stations as $station)
         <tr>
             <td>{!! $station->name !!}</td>
-            <td>{!! $station->route_id !!}</td>
+            <td>{!! $station->route->route !!}</td>
             <td>
                 {!! Form::open(['route' => ['admin.stations.destroy', $station->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

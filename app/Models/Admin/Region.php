@@ -52,5 +52,12 @@ class Region extends Model
         
     ];
 
-    
+
+    /**
+     * Relationship
+     */
+
+    public function school() {
+        return $this->hasMany(School::class, 'region_id', 'id');
+    }
 }
