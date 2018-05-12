@@ -32,9 +32,29 @@
     <script type="text/javascript" src="{{ asset('plugins/bootstrap-fileinput/js/locales/ja.js') }}"></script>
 
     <script type="text/javascript">
+
+        var map_url = "{{ $bunjouchi->map_url }}";
+        var document_url = "{{ $bunjouchi->document_url }}";
+
+        $("#map_url").fileinput({
+            language: "ja",
+            allowedFileExtensions: ["jpg", "png", "pdf"],
+            initialCaption: map_url
+        });
+
+        $("#document_url").fileinput({
+            language: "ja",
+            allowedFileExtensions: ["pdf"],
+            initialCaption: document_url
+        });
+
+
         $(function() {
           // jQuery goes here...
-            $('.file').css('visibility', 'visible');
+            $('.file').css('visibility', 'visible')
+
+            $('button.fileinput-remove-button.fileinput-remove').css("display", "inline-block");
+
 
             $("#school_id").chained("#region_id");
             $("#station_id").chained("#route_id");

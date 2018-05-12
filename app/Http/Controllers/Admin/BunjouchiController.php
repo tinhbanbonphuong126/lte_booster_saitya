@@ -12,6 +12,8 @@ use App\Repositories\Admin\SchoolRepository;
 use App\Repositories\Admin\StationRepository;
 use Illuminate\Http\Request;
 use Flash;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
 
@@ -66,20 +68,23 @@ class BunjouchiController extends AppBaseController
     {
         $input = $request->except(['_token', 'map_url', 'document_url']);
 
+
+        //Handle File Upload
         $map_url = $request->file('map_url');
         $document_url = $request->file('document_url');
         if($map_url) {
             $name_map = time() . '_' . $map_url->getClientOriginalName();
-            $input['map_url'] = 'uploads/bunjouchis/' . $name_map;
+            $input['map_url'] = $name_map;
             $destinationPath_m = public_path('/uploads/bunjouchis');
             $map_url->move($destinationPath_m, $input['map_url']);
         }
         if ($document_url) {
             $name_doc = time() . '_' . $document_url->getClientOriginalName();
-            $input['document_url'] = 'uploads/bunjouchis/' . $name_doc;
+            $input['document_url'] = $name_doc;
             $destinationPath_doc = public_path('/uploads/bunjouchis');
             $document_url->move($destinationPath_doc, $input['document_url']);
         }
+        //End File Upload
 
         $bunjouchi = $this->bunjouchiRepository->create($input);
 
@@ -152,7 +157,55 @@ class BunjouchiController extends AppBaseController
             return redirect(route('admin.bunjouchis.index'));
         }
 
-        $bunjouchi = $this->bunjouchiRepository->update($request->all(), $id);
+        //More
+        $input = $request->except(["_token", "map_url", "document_url"]);
+
+        //Handle File Upload
+        $map_url = $request->file('map_url');
+        $document_url = $request->file('document_url');
+        if ($map_url) {
+
+            $name_map = time() . '_' . $map_url->getClientOriginalName();
+            $input['map_url'] = $name_map;
+            $destinationPath_m = public_path('uploads/bunjouchis');
+            $map_url->move($destinationPath_m, $input['map_url']);
+
+            $usersMap = public_path("uploads/bunjouchis/{$bunjouchi->map_url}"); // get previous image from folder
+            $usersMapBin = public_path("uploads/bunjouchis/bin/{$bunjouchi->map_url}"); // get previous image from folder
+
+
+            dd('hello world');
+            if (File::exists($usersMap)) {
+                // Unlink or remove previous image from folder
+                //unlink($usersMap);
+
+                //Move old file to bin folder
+                File::move($usersMap, $usersMapBin);
+            }
+
+        }
+        if ($document_url) {
+            $name_doc = time() . '_' . $document_url->getClientOriginalName();
+            $input['document_url'] = $name_doc;
+            $destinationPath_doc = public_path('/uploads/bunjouchis');
+            $document_url->move($destinationPath_doc, $input['document_url']);
+
+            $usersDocument = public_path("uploads/bunjouchis/{$bunjouchi->document_url}"); // get previous image from folder
+            $usersDocumentBin = public_path("uploads/bunjouchis/bin/{$bunjouchi->document_url}"); // get previous image from folder
+            if (File::exists($usersDocument)) {
+                // Unlink or remove previous image from folder
+                //unlink($usersDocument);
+
+                //Move old file to bin folder
+                File::move($usersDocument, $usersDocumentBin);
+            }
+        }
+        //End File Upload
+
+
+        $bunjouchi = $this->bunjouchiRepository->update($input, $id);
+
+
 
         Flash::success('Bunjouchi updated successfully.');
 

@@ -31,7 +31,7 @@
         msgNo: 'いいえ',
         msgNoFilesSelected: 'ファイルが選択されていません',
         msgCancelled: 'キャンセル',
-        msgPlaceholder: 'Select {files}...',
+        msgPlaceholder: '{files}選択...',
         msgZoomModalHeading: 'プレビュー',
         msgFileRequired: 'ファイルを選択してください',
         msgSizeTooSmall: 'ファイル"{name}" (<b>{size} KB</b>)はアップロード可能な下限容量<b>{minSize} KB</b>より小さいです',

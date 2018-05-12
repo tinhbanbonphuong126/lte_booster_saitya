@@ -7,13 +7,13 @@
 <!-- Map Url Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('map_url', '区画図: ') !!}
-    <input id="map_url" name="map_url" value="{{ asset("uploads/bunjouchis/1526072019_image32.png") }}"  type="file" class="file" style="visibility: hidden" data-show-preview="false">
+    <input id="map_url" name="map_url" accept=".png, .jpg, .pdf" type="file" class="file" style="visibility: hidden" data-show-preview="false">
 </div>
 
 <!-- Document Url Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('document_url', '資料: ') !!}
-    <input id="document_url" value="{{ asset('uploads/bunjouchis/1526072019_image32.png') }}" name="document_url" type="file" class="file" style="visibility: hidden" data-show-preview="false">
+    <input id="document_url" accept=".pdf" name="document_url" type="file" class="file" style="visibility: hidden" data-show-preview="false">
 </div>
 
 <!-- Address Field -->
