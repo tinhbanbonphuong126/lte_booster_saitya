@@ -1,3 +1,4 @@
+{{--
 <!-- Title Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('title', 'タイトル: ') !!}
@@ -70,6 +71,37 @@
     {!! Form::text('dealing_status', null, ['class' => 'form-control']) !!}
 </div>
 
+
+--}}
+
+<div class="form-group col-sm-12">
+    {!! Form::label('kakaku', '価格:', ["style" => "font-weight: bold;"]) !!}
+
+    <div class="bound_price">
+        {{--Template Price--}}
+        <script id="price-template" type="text/x-handlebars-template">
+            @include("admin.bunjouchis.price")
+        </script>
+
+        @php
+            $new = isset($bunjouchi)? 0: 1;
+        @endphp
+
+        @if($new)
+            @include("admin.bunjouchis.price")
+        @else
+            @if(count($bunjouchi->prices))
+                @foreach($bunjouchi->prices as $price)
+                    @include("admin.bunjouchis.price", ["price" => $price])
+                @endforeach
+            @else
+                @include("admin.bunjouchis.price")
+            @endif
+        @endif
+
+
+    </div>
+</div>
 <!-- Region Id Field -->
 
 <div class="form-group col-sm-12">

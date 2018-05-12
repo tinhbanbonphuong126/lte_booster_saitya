@@ -46,6 +46,59 @@ button.fileinput-upload.fileinput-upload-button {
   margin: 0 auto;
 }
 
+.m_create_edit form .bound_price {
+  opacity: 1;
+}
+
+.m_create_edit form .bound_price .m_line {
+  opacity: 1;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.m_create_edit form .bound_price .m_line .m_both {
+  opacity: 1;
+  float: left;
+}
+
+.m_create_edit form .bound_price .m_line .m_left {
+  opacity: 1;
+  width: 100px;
+}
+
+.m_create_edit form .bound_price .m_line .m_left input {
+  opacity: 1;
+  display: inline-block;
+  width: 53px;
+}
+
+.m_create_edit form .bound_price .m_line .m_left span {
+  opacity: 1;
+}
+
+.m_create_edit form .bound_price .m_line .m_right {
+  opacity: 1;
+  width: calc(100% - 100px);
+}
+
+.m_create_edit form .bound_price .m_line .m_right input {
+  width: calc(100% - 75px);
+  display: inline-block;
+}
+
+.m_create_edit form .bound_price .m_line .m_right .action {
+  opacity: 1;
+  display: inline-block;
+  float: right;
+}
+
+.m_create_edit form .bound_price .m_line .m_right .action i.icon::before {
+  font-size: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  padding: 4px 8px;
+}
+
 input[type=checkbox],
 input[type=radio] {
   margin: -3px 0 0;

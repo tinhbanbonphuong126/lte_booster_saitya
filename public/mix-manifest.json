@@ -10,5 +10,11 @@
   "/css/admin/app.css": "/css/admin/app.css",
   "/css/admin/app.css.map": "/css/admin/app.css.map",
   "/js/admin/app.js": "/js/admin/app.js",
-  "/js/admin/app.js.map": "/js/admin/app.js.map"
+  "/js/admin/app.js.map": "/js/admin/app.js.map",
+  "/js/admin/bunjouchis/show.js": "/js/admin/bunjouchis/show.js",
+  "/js/admin/bunjouchis/show.js.map": "/js/admin/bunjouchis/show.js.map",
+  "/js/admin/bunjouchis/list.js": "/js/admin/bunjouchis/list.js",
+  "/js/admin/bunjouchis/list.js.map": "/js/admin/bunjouchis/list.js.map",
+  "/js/admin/bunjouchis/create_edit.js": "/js/admin/bunjouchis/create_edit.js",
+  "/js/admin/bunjouchis/create_edit.js.map": "/js/admin/bunjouchis/create_edit.js.map"
 }

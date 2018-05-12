@@ -38,6 +38,6 @@ class CurlGet extends Command
      */
     public function handle()
     {
-        shell_exec('curl --cookie cookies.txt "http://localhost:8080/admin/'. $this->argument('table') . '/' . $this->argument('action') . '" -o public/html/index.html');
+        shell_exec('curl --cookie cookies.txt "http://localhost:3000/admin/'. $this->argument('table') . '/' . $this->argument('action') . '" -o public/html/index.html');
     }
 }

@@ -51,6 +51,59 @@ button.fileinput-upload.fileinput-upload-button {
   form {
     width: 50%;
     margin: 0 auto;
+
+    .bound_price {
+      opacity: 1;
+
+      .m_line {
+        opacity: 1;
+        clear: both;
+        overflow: hidden;
+        margin-bottom: 12px;
+
+        .m_both {
+          opacity: 1;
+          float: left;
+        }
+        .m_left {
+          opacity: 1;
+          width: 100px;
+          input {
+            opacity: 1;
+            display: inline-block;
+            width: 53px;
+
+          }
+          span {
+            opacity: 1;
+          }
+
+        }
+        .m_right {
+          opacity: 1;
+          width: calc(100% - 100px);
+
+          input {
+            width: calc(100% - 75px);
+            display: inline-block;
+          }
+
+
+          .action {
+            opacity: 1;
+            display: inline-block;
+            float: right;
+
+            i.icon::before {
+              font-size: 24px;
+              border: 1px solid rgba(0, 0, 0, 0.36);
+              padding: 4px 8px;
+            }
+          }
+
+        }
+      }
+    }
   }
 
 }

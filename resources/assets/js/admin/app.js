@@ -21,3 +21,7 @@
 //     el: '#app'
 // });
 
+
+$(document).ready(function () {
+
+});

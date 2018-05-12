@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/admin/app.css') }}">
 
+    <link href="https://unpkg.com/ionicons@4.0.0/dist/css/ionicons.min.css" rel="stylesheet"/>
+
     @yield('css')
 
 </head>
@@ -103,6 +105,8 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+
+<script type="text/javascript" src="{{ asset("plugins/handlebarjs/handlebars-v4.0.11.js") }}"></script>
 
 <!-- AdminLTE App -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.11/js/app.min.js"></script>

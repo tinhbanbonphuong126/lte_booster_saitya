@@ -16,6 +16,6 @@
 </li>
 
 <li class="{{ Request::is('bunjouchis*') ? 'active' : '' }}">
-    <a href="{!! route('admin.bunjouchis.index') !!}"><i class="fa fa-edit"></i><span>Bunjouchis</span></a>
+    <a href="{!! route('admin.bunjouchis.index') !!}"><i class="fa fa-edit"></i><span>分譲地</span></a>
 </li>
 

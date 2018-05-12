@@ -66,8 +66,12 @@ class BunjouchiController extends AppBaseController
      */
     public function store(CreateBunjouchiRequest $request)
     {
-        $input = $request->except(['_token', 'map_url', 'document_url']);
+        //Handle Prices Block
+        $prices = $request->get("prices");
+        dd($prices);
 
+
+        $input = $request->except(['_token', 'map_url', 'document_url', 'prices']);
 
         //Handle File Upload
         $map_url = $request->file('map_url');
@@ -87,6 +91,9 @@ class BunjouchiController extends AppBaseController
         //End File Upload
 
         $bunjouchi = $this->bunjouchiRepository->create($input);
+
+
+
 
         Flash::success('Bunjouchi saved successfully.');
 
@@ -158,7 +165,7 @@ class BunjouchiController extends AppBaseController
         }
 
         //More
-        $input = $request->except(["_token", "map_url", "document_url"]);
+        $input = $request->except(["_token", "map_url", "document_url", "prices"]);
 
         //Handle File Upload
         $map_url = $request->file('map_url');
@@ -204,6 +211,9 @@ class BunjouchiController extends AppBaseController
 
         $bunjouchi = $this->bunjouchiRepository->update($input, $id);
 
+        $prices = $request->get("prices");
+
+        dd($prices);
 
 
         Flash::success('Bunjouchi updated successfully.');

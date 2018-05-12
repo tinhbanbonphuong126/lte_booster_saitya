@@ -26,14 +26,14 @@ input.btn-primary[type='submit'] {
 
 .m_show .box .box-body .row .form-group label {
   opacity: 1;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   width: 150px;
 }
 
 .m_show .box .box-body .row .form-group p {
   opacity: 1;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   display: inline-block;
 }

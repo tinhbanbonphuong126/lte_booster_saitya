@@ -17,14 +17,11 @@
 
     <link rel="stylesheet" href="http://localhost:8080/css/admin/app.css">
 
+    <link href="https://unpkg.com/ionicons@4.0.0/dist/css/ionicons.min.css" rel="stylesheet"/>
+
         <link rel="stylesheet" href="http://localhost:8080/plugins/bootstrap-fileinput/css/fileinput.min.css">
     <link rel="stylesheet" href="http://localhost:8080/css/admin/bunjouchis/bunjouchis.css">
 
-    <style>
-        button.fileinput-upload.fileinput-upload-button {
-            display: none;
-        }
-    </style>
 
 </head>
 
@@ -161,78 +158,43 @@
                 <div class="row">
                     <form method="POST" action="http://localhost:8080/admin/bunjouchis" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data"><input name="_token" type="hidden" value="4hRyVsdealNt9AWv7IBImUkpceiQMO5wc1Vj1ums">
 
-                        <!-- Title Field -->
-<div class="form-group col-sm-12">
-    <label for="title">タイトル: </label>
-    <input class="form-control" name="title" type="text" id="title">
-</div>
+                        <div class="form-group col-sm-12">
+    <label for="kakaku" style="font-weight: bold;">価格:</label>
 
-<!-- Map Url Field -->
-<div class="form-group col-sm-12">
-    <label for="map_url">区画図: </label>
-    <input id="map_url" name="map_url" type="file" class="file" style="visibility: hidden" data-show-preview="false">
-</div>
+    <div class="bound_price">
+        
+        <script id="price-template" type="text/x-handlebars-template">
+            <div class="m_loop m_line">
+    <div class="m_both m_left">
+        <input class="form-control" value="" type="text" name="prices[]['bangou']"><span> 号地</span>
+    </div>
+    <div class="m_both m_right">
+        <input value="" class="form-control" type="prices[]['description']">
 
-<!-- Document Url Field -->
-<div class="form-group col-sm-12">
-    <label for="document_url">資料: </label>
-    <input id="map_url" name="document_url" type="file" class="file" style="visibility: hidden" data-show-preview="false">
-</div>
+        <div class="action">
+            <i class="icon ion-md-add"></i>
+            <i class="icon ion-md-remove"></i>
+        </div>
+    </div>
+</div>        </script>
 
-<!-- Address Field -->
-<div class="form-group col-sm-12">
-    <label for="address">住所:</label>
-    <input class="form-control" name="address" type="text" id="address">
-</div>
+        
+                    <div class="m_loop m_line">
+    <div class="m_both m_left">
+        <input class="form-control" value="" type="text" name="prices[]['bangou']"><span> 号地</span>
+    </div>
+    <div class="m_both m_right">
+        <input value="" class="form-control" type="prices[]['description']">
 
-<!-- Land Area Field -->
-<div class="form-group col-sm-12">
-    <label for="land_area">土地面積:</label>
-    <input class="form-control" name="land_area" type="text" id="land_area">
-</div>
+        <div class="action">
+            <i class="icon ion-md-add"></i>
+            <i class="icon ion-md-remove"></i>
+        </div>
+    </div>
+</div>        
 
-<!-- Ground Field -->
-<div class="form-group col-sm-12">
-    <label for="ground">地目:</label>
-    <input class="form-control" name="ground" type="text" id="ground">
+    </div>
 </div>
-
-<!-- Total Parcel Field -->
-<div class="form-group col-sm-12">
-    <label for="total_parcel">総区画:</label>
-    <input class="form-control" name="total_parcel" type="text" id="total_parcel">
-</div>
-
-<!-- Construction Pay Rate Field -->
-<div class="form-group col-sm-12">
-    <label for="construction_pay_rate">建ペイ率: </label>
-    <input class="form-control" name="construction_pay_rate" type="text" id="construction_pay_rate">
-</div>
-
-<!-- Floor Area Ratio Field -->
-<div class="form-group col-sm-12">
-    <label for="floor_area_ratio">容積率</label>
-    <input class="form-control" name="floor_area_ratio" type="text" id="floor_area_ratio">
-</div>
-
-<!-- Usage Area Field -->
-<div class="form-group col-sm-12">
-    <label for="usage_area">用途地域:</label>
-    <input class="form-control" name="usage_area" type="text" id="usage_area">
-</div>
-
-<!-- Drainage Field -->
-<div class="form-group col-sm-12">
-    <label for="drainage">排水:</label>
-    <input class="form-control" name="drainage" type="text" id="drainage">
-</div>
-
-<!-- Dealing Status Field -->
-<div class="form-group col-sm-12">
-    <label for="dealing_status">取引態様:</label>
-    <input class="form-control" name="dealing_status" type="text" id="dealing_status">
-</div>
-
 <!-- Region Id Field -->
 
 <div class="form-group col-sm-12">
@@ -399,20 +361,37 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
 
+<script type="text/javascript" src="http://localhost:8080/plugins/handlebarjs/handlebars-v4.0.11.js"></script>
+
 <!-- AdminLTE App -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.11/js/app.min.js"></script>
 
 <script src="http://localhost:8080/js/admin/app.js"></script>
 
     <script type="text/javascript" src="http://localhost:8080/plugins/chained/jquery.chained.js"></script>
-    <script type="text/javascript" src="http://localhost:8080/plugins/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/plugins/bootstrap-fileinput/js/fileinput.js"></script>
     <script type="text/javascript" src="http://localhost:8080/plugins/bootstrap-fileinput/js/locales/ja.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/js/admin/bunjouchis/create_edit.js"></script>
 
     <script type="text/javascript">
+
+        
+
+        $("#map_url").fileinput({
+            language: "ja",
+            allowedFileExtensions: ["jpg", "png", "pdf"],
+        });
+
+        $("#document_url").fileinput({
+            language: "ja",
+            allowedFileExtensions: ["pdf"]
+        });
+
         $(function() {
           // jQuery goes here...
 
             $('.file').css('visibility', 'visible');
+
 
             $("#school_id").chained("#region_id");
             $("#station_id").chained("#route_id");

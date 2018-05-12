@@ -45,3 +45,9 @@ mix.webpackConfig({devtool: "source-map"});
 
 mix.js('resources/assets/js/admin/app.js', 'public/js/admin')
     .sourceMaps();
+
+
+mix.js('resources/assets/js/admin/bunjouchis/list.js', 'public/js/admin/bunjouchis/')
+mix.js('resources/assets/js/admin/bunjouchis/show.js', 'public/js/admin/bunjouchis/')
+mix.js('resources/assets/js/admin/bunjouchis/create_edit.js', 'public/js/admin/bunjouchis/')
+    .sourceMaps();
