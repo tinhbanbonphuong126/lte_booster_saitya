@@ -1,3 +1,7 @@
+button.fileinput-upload.fileinput-upload-button {
+  display: none;
+}
+
 .m_index {
   opacity: 1;
 }

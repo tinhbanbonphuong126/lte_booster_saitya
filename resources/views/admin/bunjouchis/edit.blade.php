@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('css')
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap-fileinput/css/fileinput.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/admin/bunjouchis/bunjouchis.css') }}">
 @endsection
 @section('content')
@@ -13,7 +14,7 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($bunjouchi, ['route' => ['admin.bunjouchis.update', $bunjouchi->id], 'method' => 'patch']) !!}
+                   {!! Form::model($bunjouchi, ['route' => ['admin.bunjouchis.update', $bunjouchi->id], 'method' => 'patch', 'enctype' => 'multipart/form-data']) !!}
 
                         @include('admin.bunjouchis.fields')
 
@@ -27,9 +28,13 @@
 
 @section('scripts')
     <script type="text/javascript" src="{{ asset('plugins/chained/jquery.chained.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('plugins/bootstrap-fileinput/js/fileinput.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('plugins/bootstrap-fileinput/js/locales/ja.js') }}"></script>
+
     <script type="text/javascript">
         $(function() {
           // jQuery goes here...
+            $('.file').css('visibility', 'visible');
 
             $("#school_id").chained("#region_id");
             $("#station_id").chained("#route_id");
@@ -58,7 +63,7 @@
 
                         $("#route_id").val(route_id).trigger('change');
                         $("#station_id").val(station_id).trigger('change');
-            @php
+                    @php
                 }
             @endphp
 

@@ -40,7 +40,7 @@
             <td class="hidden">{!! $bunjouchi->school_id !!}</td>
             <td class="hidden">{!! $bunjouchi->station_id !!}</td>
             <td class="hidden">{!! $bunjouchi->status !!}</td>
-            <td>{!! $bunjouchi->updated_at !!}</td>
+            <td>{!! getDayDB($bunjouchi->updated_at) !!}</td>
             <td>
                 {!! Form::open(['route' => ['admin.bunjouchis.destroy', $bunjouchi->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

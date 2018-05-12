@@ -34,7 +34,7 @@ class BunjouchiController extends AppBaseController
     public function index(Request $request)
     {
         $this->bunjouchiRepository->pushCriteria(new RequestCriteria($request));
-        $bunjouchis = $this->bunjouchiRepository->paginate(20);
+        $bunjouchis = $this->bunjouchiRepository->orderBy('updated_at', 'DESC')->paginate(20);
 
         return view('admin.bunjouchis.index')
             ->with('bunjouchis', $bunjouchis);
@@ -64,7 +64,22 @@ class BunjouchiController extends AppBaseController
      */
     public function store(CreateBunjouchiRequest $request)
     {
-        $input = $request->all();
+        $input = $request->except(['_token', 'map_url', 'document_url']);
+
+        $map_url = $request->file('map_url');
+        $document_url = $request->file('document_url');
+        if($map_url) {
+            $name_map = time() . '_' . $map_url->getClientOriginalName();
+            $input['map_url'] = 'uploads/bunjouchis/' . $name_map;
+            $destinationPath_m = public_path('/uploads/bunjouchis');
+            $map_url->move($destinationPath_m, $input['map_url']);
+        }
+        if ($document_url) {
+            $name_doc = time() . '_' . $document_url->getClientOriginalName();
+            $input['document_url'] = 'uploads/bunjouchis/' . $name_doc;
+            $destinationPath_doc = public_path('/uploads/bunjouchis');
+            $document_url->move($destinationPath_doc, $input['document_url']);
+        }
 
         $bunjouchi = $this->bunjouchiRepository->create($input);
 

@@ -13,7 +13,7 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('admin.bunjouchis.show_fields')
-                    <a href="{!! route('admin.bunjouchis.index') !!}" class="btn btn-default">Back</a>
+                    <a href="{!! route('admin.bunjouchis.index') !!}" class="btn btn-default">戻る</a>
                 </div>
             </div>
         </div>
