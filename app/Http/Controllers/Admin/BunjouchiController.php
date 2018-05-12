@@ -174,7 +174,6 @@ class BunjouchiController extends AppBaseController
             $usersMapBin = public_path("uploads/bunjouchis/bin/{$bunjouchi->map_url}"); // get previous image from folder
 
 
-            dd('hello world');
             if (File::exists($usersMap)) {
                 // Unlink or remove previous image from folder
                 //unlink($usersMap);
