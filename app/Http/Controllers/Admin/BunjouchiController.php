@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\Admin\CreateBunjouchiRequest;
 use App\Http\Requests\Admin\UpdateBunjouchiRequest;
+use App\Models\Admin\Price;
 use App\Repositories\Admin\BunjouchiRepository;
 use App\Http\Controllers\AppBaseController;
 use App\Repositories\Admin\RegionRepository;
@@ -66,10 +67,6 @@ class BunjouchiController extends AppBaseController
      */
     public function store(CreateBunjouchiRequest $request)
     {
-        //Handle Prices Block
-        $prices = $request->get("prices");
-        dd($prices);
-
 
         $input = $request->except(['_token', 'map_url', 'document_url', 'prices']);
 
@@ -92,7 +89,16 @@ class BunjouchiController extends AppBaseController
 
         $bunjouchi = $this->bunjouchiRepository->create($input);
 
+        //Handle Prices Block
 
+        if($bunjouchi) {
+            $prices = $request->get("prices");
+
+            foreach($prices as $price) {
+                $bunjouchi->prices()->save(new Price($price));
+            }
+
+        }
 
 
         Flash::success('Bunjouchi saved successfully.');

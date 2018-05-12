@@ -1,10 +1,10 @@
 # HTTP Cookie File downloaded with cookies.txt by Genuinous @genuinous
 # This file can be used by wget, curl, aria2c and other standard compliant tools.
 # Usage Examples:
-#   1) wget -x --load-cookies cookies.txt "http://localhost:3000/admin/bunjouchis/7"
-#   2) curl --cookie cookies.txt "http://localhost:3000/admin/bunjouchis/7"
-#   3) aria2c --load-cookies cookies.txt "http://localhost:3000/admin/bunjouchis/7"
+#   1) wget -x --load-cookies cookies.txt "http://localhost:3000/admin/routes"
+#   2) curl --cookie cookies.txt "http://localhost:3000/admin/routes"
+#   3) aria2c --load-cookies cookies.txt "http://localhost:3000/admin/routes"
 #
-localhost	FALSE	/	FALSE	1526777121	XSRF-TOKEN	eyJpdiI6Imt3NW9jUytEYWRZMGQrMjlBYzdWVEE9PSIsInZhbHVlIjoiZUNtQzF0ekNteFd6eWZiaFNreFE1UUdvZWJKRGlkNENIZlNsVmdTdmJWM21Camx0K2ZHbFhMRlpiUWlXQ1BJRGhRNmR2NGdVMlwvNFNheVBGSWVIQURRPT0iLCJtYWMiOiJmZWRmMmYyNTE1YTEyYzIzMzA3YmUzYjQyMWM5NWJlZmM1YTFjNmI0ZGNjYzE0NDVkMTJlMzNhMTVkMjA1ZDZhIn0%3D
-localhost	FALSE	/	FALSE	1526777121	laravel_session	eyJpdiI6IlJrd1B1ckhBTWJXQ2xZUmpDOHhTOUE9PSIsInZhbHVlIjoiS21QRGpzT1JpdFR6ZTlWaWNpRVNPTU5RcFg2bHNHNHVkWW5WNWF1aEY3UVJacENtTzY5MHlpTUJBZVM1dmZVWUEzXC9JU2xjeURFcGZzTStQUktlNFp3PT0iLCJtYWMiOiI1MDczM2Q0ZTY2YWI3NzE1MDY2Y2I4OTg0NWRlYTM2MzEwMjA0NDU4NmJhYTlmNDUzY2M5YTNmZmM1N2IxZDEzIn0%3D
-localhost	FALSE	/	FALSE	0	io	_5Qsfvp6amPxciynAAAD
+localhost	FALSE	/	FALSE	1526870354	XSRF-TOKEN	eyJpdiI6IjVabENJZHFKcHNZejVxRlJ1M1VnekE9PSIsInZhbHVlIjoiTU1XOXREc1JaSkVcL3d4UDhEYkdySk9WZUxcL1hBa3hSdE5kT1EzbEMwWnNMMlpJcDQ5SDlcL1NlbEt4TFhYVGU1a1VLY21BQ2dNS2JVYXV0UjFXM21Pa3c9PSIsIm1hYyI6IjAxNzRlOWNkNjc1NzZkOTE3MDdiMWM4ZjQwNGEzNWUwMGFmZDJjYjY3ODg5NGE4MjhhYzU2NjYyMzU2OGQ3MTUifQ%3D%3D
+localhost	FALSE	/	FALSE	1526870354	laravel_session	eyJpdiI6IktEb1VxNnNuanM3Mk1XKzBxd1doVVE9PSIsInZhbHVlIjoiV3JTVjlEU1F3Q1wvQWFyUDB4UVJoVjJDREhxZGJSK2lnSWg4ell2ZzN6VG9hQ1NDalBKbnZTYUFrTCtjTVRaS1YyRXlzZ012a3VUZUg4MWJ4Q3ZJdUVRPT0iLCJtYWMiOiI4MzYzNzU2M2Y4MjU1MjMxZWU5NDdkNjY5YTI0MDdjYjMwZDdiZWVlYTdiMzcxOTUyYjk2MTYzODRjZDFhMjc4In0%3D
+localhost	FALSE	/	FALSE	0	io	ucHqxgFpDw8wFsqOAADk

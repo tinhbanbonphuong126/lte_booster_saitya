@@ -1,15 +1,23 @@
 $(function() {
   // jQuery goes here...
 
-
-
+    reset();
 
     handleAddBlock();
     handleDeleteBlock();
 
 
 
+    function reset() {
 
+        $.each($(".prices_bangou"), function (index, element) {
+            $(element).attr("name", "prices[" + index + "][bangou]");
+        });
+
+        $.each($(".prices_description"), function (index, element) {
+            $(element).attr("name", "prices[" + index + "][description]");
+        });
+    }
 
     function handleAddBlock() {
         $(".bound_price").on("click", ".ion-md-add", function () {
@@ -20,6 +28,8 @@ $(function() {
             var $current = $(this).closest(".m_line");
             $(template({})).insertAfter($current);
 
+            reset();
+
         });
     }
 
@@ -29,6 +39,8 @@ $(function() {
 
             if($(".m_line").length > 1) {
                 $current.remove();
+
+                reset()
             }
         });
     }
