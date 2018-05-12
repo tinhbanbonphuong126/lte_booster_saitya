@@ -76,6 +76,27 @@
     <p>{!! $bunjouchi->dealing_status !!}</p>
 </div>
 
+<!-- Dealing Status Field -->
+<div class="form-group">
+    {!! Form::label('price', '価格:', ['class' => "font_bold price_label"]) !!}
+    <p></p>
+</div>
+
+
+@foreach($bunjouchi->prices as $price)
+    <div class="form-group">
+        {!! Form::label('', $price->bangou . ' 番号:') !!}
+        <p>
+            {{ $price->description }}
+        </p>
+    </div>
+@endforeach
+
+
+<div class="form-group">
+    {!! Form::label('region_id', '検索:', ['class' => "font_bold"]) !!}
+    <p></p>
+</div>
 <!-- School Id Field -->
 <div class="form-group">
     {!! Form::label('region_id', '地名:') !!}

@@ -30,6 +30,7 @@
     <script type="text/javascript" src="{{ asset('plugins/chained/jquery.chained.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugins/bootstrap-fileinput/js/fileinput.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugins/bootstrap-fileinput/js/locales/ja.js') }}"></script>
+    <script type="text/javascript" src="{{ asset("js/admin/bunjouchis/create_edit.js") }}"></script>
 
     <script type="text/javascript">
 

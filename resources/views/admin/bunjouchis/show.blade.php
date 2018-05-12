@@ -5,7 +5,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            分譲地
+            分譲地詳細
         </h1>
     </section>
     <div class="content m_show">

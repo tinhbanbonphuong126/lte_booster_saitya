@@ -1,4 +1,3 @@
-{{--
 <!-- Title Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('title', 'タイトル: ') !!}
@@ -71,8 +70,6 @@
     {!! Form::text('dealing_status', null, ['class' => 'form-control']) !!}
 </div>
 
-
---}}
 
 <div class="form-group col-sm-12">
     {!! Form::label('kakaku', '価格:', ["style" => "font-weight: bold;"]) !!}

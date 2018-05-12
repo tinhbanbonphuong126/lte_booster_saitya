@@ -217,9 +217,16 @@ class BunjouchiController extends AppBaseController
 
         $bunjouchi = $this->bunjouchiRepository->update($input, $id);
 
-        $prices = $request->get("prices");
 
-        dd($prices);
+        if ($bunjouchi) {
+            $prices = $request->get("prices");
+            $bunjouchi->prices()->delete();
+
+            foreach ($prices as $price) {
+                $bunjouchi->prices()->save(new Price($price));
+            }
+
+        }
 
 
         Flash::success('Bunjouchi updated successfully.');

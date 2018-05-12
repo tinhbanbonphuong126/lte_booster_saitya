@@ -4,6 +4,22 @@ input.btn-primary[type='submit'] {
   margin-left: 50px;
 }
 
+.sidebar-collapse.sidebar-mini.vsc-initialized .logo b {
+  display: none;
+}
+
+.navbar-nav > .user-menu .user-image {
+  border-radius: 0%;
+}
+
+.img-circle {
+  border-radius: 0%;
+}
+
+.font_bold {
+  font-weight: bold !important;
+}
+
 .m_show {
   opacity: 1;
 }
@@ -29,6 +45,7 @@ input.btn-primary[type='submit'] {
   font-size: 16px;
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   width: 150px;
+  font-weight: normal;
 }
 
 .m_show .box .box-body .row .form-group p {
@@ -36,6 +53,16 @@ input.btn-primary[type='submit'] {
   font-size: 16px;
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   display: inline-block;
+}
+
+.m_show .box .box-body .row .form-group .price_label {
+  vertical-align: top;
+}
+
+.m_show .box .box-body .row .form-group .list_price {
+  opacity: 1;
+  display: inline-block;
+  width: calc(100% - 187px);
 }
 
 

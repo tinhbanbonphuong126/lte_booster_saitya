@@ -19,6 +19,8 @@
 
     <link href="https://unpkg.com/ionicons@4.0.0/dist/css/ionicons.min.css" rel="stylesheet"/>
 
+    <link rel="shortcut icon" href="{{ asset("img/admin_img/favicon.ico") }}" type="image/png"/>
+
     @yield('css')
 
 </head>
@@ -47,7 +49,7 @@
                         <!-- Menu Toggle Button -->
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <!-- The user image in the navbar-->
-                            <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"
+                            <img src="{{ asset("img/admin_img/logo_admin.png") }}"
                                  class="user-image" alt="User Image"/>
                             <!-- hidden-xs hides the username on small devices so only the image appears. -->
                             <span class="hidden-xs">{!! Auth::user()->name !!}</span>
@@ -55,7 +57,7 @@
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
                             <li class="user-header">
-                                <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"
+                                <img src="{{ asset("img/admin_img/logo_admin.png") }}"
                                      class="img-circle" alt="User Image"/>
                                 <p>
                                     {!! Auth::user()->name !!}
@@ -94,7 +96,7 @@
 
     <!-- Main Footer -->
     <footer class="main-footer" style="max-height: 100px;text-align: center">
-        <strong>Copyright © 2016 <a href="http://infyom.com" target="_blank">サティヤ不動産</a>.</strong> All rights reserved.
+        <strong>Copyright © 2018 <a href="http://infyom.com" target="_blank">サティヤ不動産</a>.</strong> All rights reserved.
     </footer>
 
 </div>

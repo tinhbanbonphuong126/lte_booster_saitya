@@ -13,8 +13,19 @@
 input.btn-primary[type='submit'] {
   margin-left: 50px;
 }
+.sidebar-collapse.sidebar-mini.vsc-initialized .logo b {
+  display: none;
+}
+.navbar-nav > .user-menu .user-image {
+  border-radius: 0%;
+}
+.img-circle {
+  border-radius: 0%;
+}
 
-
+.font_bold {
+  font-weight: bold!important;
+}
 //CRUD COMMON SCSS
 .m_show {
   opacity: 1;
@@ -37,6 +48,8 @@ input.btn-primary[type='submit'] {
             font-family: $font_admin;
             width: 150px;
 
+            font-weight: normal;
+
           }
           p {
             opacity: 1;
@@ -44,6 +57,17 @@ input.btn-primary[type='submit'] {
             font-family: $font_admin;
 
             display: inline-block;
+          }
+
+          .price_label {
+            vertical-align: top;
+          }
+
+          .list_price {
+            opacity: 1;
+            display: inline-block;
+            width: calc(100% - 187px);
+
           }
         }
       }
