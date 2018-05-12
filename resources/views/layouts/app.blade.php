@@ -19,7 +19,7 @@
 
     <link href="https://unpkg.com/ionicons@4.0.0/dist/css/ionicons.min.css" rel="stylesheet"/>
 
-    <link rel="shortcut icon" href="{{ asset("img/admin_img/favicon.ico") }}" type="image/png"/>
+    <link rel="shortcut icon" href="{{ asset("favicon.ico") }}" type="image/x-icon"/>
 
     @yield('css')
 

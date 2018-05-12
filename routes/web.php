@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 
 Auth::routes();
-
+Route::any("register", function () {
+    return "Only Admin can register. Thank you";
+});
 
 Route::get("/", function() {
 

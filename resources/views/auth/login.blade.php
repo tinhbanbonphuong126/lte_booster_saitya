@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.11/css/skins/_all-skins.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css">
 
-    <link rel="shortcut icon" href="{{ asset("img/admin_img/favicon.ico") }}" type="image/png"/>
+    <link rel="shortcut icon" href="{{ asset("favicon.ico") }}" type="image/png"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,7 +50,7 @@
     <div class="login-box-body">
         <p class="login-box-msg">ログイン</p>
 
-        <form method="post" action="{{ url('/login') }}">
+        <form method="post" id="formLogin" action="{{ url('/login') }}">
             {!! csrf_field() !!}
 
             <div class="form-group has-feedback {{ $errors->has('email') ? ' has-error' : '' }}">
@@ -84,7 +84,7 @@
                 </div>
                 <!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat" style="padding-left: 0;padding-right: 0;text-align: center;">サインイン</button>
+                    <button id="btnSubmit" type="submit" class="btn btn-primary btn-block btn-flat" style="padding-left: 0;padding-right: 0;text-align: center;">サインイン</button>
                 </div>
                 <!-- /.col -->
             </div>
@@ -107,6 +107,13 @@
             checkboxClass: 'icheckbox_square-blue',
             radioClass: 'iradio_square-blue',
             increaseArea: '20%' // optional
+        });
+
+
+        //Script prevent double click
+        $('#btnSubmit').on('click', function () {
+            $(this).val('Please wait ...').attr('disabled', 'disabled');
+            $('#formLogin').submit();
         });
     });
 </script>
