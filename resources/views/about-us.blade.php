@@ -150,7 +150,8 @@
                         @include("layouts.frontend.partial.component.cpn_title", ["title" => "メールフォーム"])
                     </div>
                     <div class="form_info">
-                        <form id="formSubmit" class="formSubmit" action="javascript:;" method="post">
+                        <form id="formSubmit" class="formSubmit" action="{{ route("submitForm") }}" method="post">
+                            {{ csrf_field() }}
                             <p class="hitsuyou">＊必須</p>
                             <div class="form_content">
                                 <div class="cell_form">

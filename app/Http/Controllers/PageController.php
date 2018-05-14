@@ -24,9 +24,18 @@ class PageController extends Controller
 
     function aboutUs(BunjouchiRepository $bunjouchiRepository)
     {
-        $bunjouchis = $bunjouchiRepository->all();
+        $bunjouchis = $bunjouchiRepository->findWhere(["status" => "0"]);
         return view("about-us", compact("bunjouchis"));
     }
+
+    function submitForm(Request $request)
+    {
+
+
+
+        return redirect()->route("home");
+    }
+
 
     function schoolSearch($id = null, RegionRepository $regionRepository, BunjouchiRepository $bunjouchiRepository)
     {

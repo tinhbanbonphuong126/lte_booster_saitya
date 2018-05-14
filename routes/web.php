@@ -27,6 +27,8 @@ Auth::routes();
 
 Route::get('/', "PageController@home")->name("home");
 Route::get('/about-us', "PageController@aboutUs")->name("aboutUs");
+Route::post("/about-us/submitForm", "PageController@submitForm")->name("submitForm");
+
 Route::get('/school-search/{id?}', "PageController@schoolSearch")->name("schoolSearch");
 Route::get('/chizu-search/{id?}', "PageController@chizuSearch")->name("chizuSearch");
 Route::get('/eki-search/{id?}', "PageController@ekiSearch")->name("ekiSearch");
