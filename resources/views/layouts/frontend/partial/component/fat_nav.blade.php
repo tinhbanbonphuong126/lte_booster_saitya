@@ -4,7 +4,7 @@
     </div>
     <div class="fat-nav__wrapper">
         <ul>
-            <li><a class="link" href="@@webRoot/index.html">HOME <span>ホーム</span></a></li>
+            <li><a class="link" href="{{ route("home") }}">HOME <span>ホーム</span></a></li>
             <li><a class="link" href="@@webRoot/about-us/index.html#jigyou">PROJECT <span>事業内容　</span></a></li>
             <li><a class="link" href="@@webRoot/about-us/index.html#bunjochi">SEARCH <span>分譲地</span></a></li>
             <li><a class="link" href="@@webRoot/about-us/index.html#company">ABOUT US <span>会社概要</span></a></li>

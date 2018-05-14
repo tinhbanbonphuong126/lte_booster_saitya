@@ -1,5 +1,9 @@
 @extends('layouts.frontend.app')
 
+@section('title', 'サティヤ不動産ホームページ')
+@section('description', 'サティヤ不動産ホームページ')
+@section('keywords', 'サティヤ不動産ホームページ')
+
 @section('style')
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwlkTA1L6lLnp76nr6LZ22ebIXMXNxxUY&language=ja&region=JP"></script>
     <link rel="stylesheet" href="{{ asset("css/home/home.css") }}" type="text/css" media="all"/>
@@ -9,7 +13,6 @@
 @endsection
 
 @section('content')
-
     <div class="main-content">
         <div class="top_banner">
 
@@ -30,7 +33,7 @@
 
         <div class="naiyou_page">
             <div class="container">
-                <div class="kittsu">丸亀在住</div>
+                <div class="kittsu">キッシー<span>(丸亀在住)</span></div>
                 <div class="slogan">
                     サティヤ不動産は高松市、丸亀市、坂出市を中心とした香川県の不動産売買等のご紹介を行っております。
                     <br class="br_creative"/>
@@ -52,13 +55,13 @@
 
             <div class="max_search">
                 <div class="bounce_img">
-                    <a href="">
+                    <a href="{{ route("chizuSearch") }}">
                         <img src="{{ asset("img/home/search_1.png") }}" alt="Image Thumbnail">
                     </a>
-                    <a class="middle" href="">
+                    <a class="middle" href="{{ route("schoolSearch") }}">
                         <img src="{{ asset("img/home/search_2.png") }}" alt="Image Thumbnail">
                     </a>
-                    <a href="">
+                    <a href="{{ route("ekiSearch") }}">
                         <img src="{{ asset("img/home/search_3.png") }}" alt="Image Thumbnail">
                     </a>
                 </div>
@@ -143,8 +146,10 @@
                                 <img src="{{ asset("img/home/project_1.png") }}" alt="Image Thumbnail">
                             </a>
                         </div>
-                        <div target="_blank" href="http://www.satya.co.jp/sale/index.html" class="cell_prj">
-                            <img src="{{ asset("img/home/project_2.png") }}" alt="Image Thumbnail">
+                        <div class="cell_prj">
+                            <a target="_blank" href="http://www.satya.co.jp/sale/index.html" class="cell_prj">
+                                <img src="{{ asset("img/home/project_2.png") }}" alt="Image Thumbnail">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -156,8 +161,10 @@
                                 <img src="{{ asset("img/home/project_1.png") }}" alt="Image Thumbnail">
                             </a>
                         </div>
-                        <div target="_blank" href="http://www.satya.co.jp/sale/index.html" class="cell_prj">
-                            <img src="{{ asset("img/home/project_2.png") }}" alt="Image Thumbnail">
+                        <div class="cell_prj">
+                            <a target="_blank" href="http://www.satya.co.jp/sale/index.html" class="cell_prj">
+                                <img src="{{ asset("img/home/project_2.png") }}" alt="Image Thumbnail">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +180,6 @@
 
         </div>
     </div>
-
 @endsection
 
 @section('script')

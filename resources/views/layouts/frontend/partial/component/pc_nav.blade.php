@@ -1,6 +1,6 @@
 <div class="pc_nav">
     <div class="nav_pos left_nav">
-        <a href="../index.html"><img class="logo_image" src="{{ asset("img/common/web_logo.png") }}" alt="Satya Logo"></a>
+        <a href="{{ route("home") }}"><img class="logo_image" src="{{ asset("img/common/web_logo.png") }}" alt="Satya Logo"></a>
         <a href="tel:+81120853032">
             <img class="tel_logo" src="{{ asset("img/common/web_tel.png") }}" alt="Satya Tel">
         </a>
@@ -10,7 +10,7 @@
             <ul>
                 <!--Add class active to a anchor tag if it's current page-->
                 <li class="">
-                    <a class="" href="@@webRoot/index.html">
+                    <a class="" href="{{ route("home") }}">
                         <div class="upper_link">HOME</div>
                         <div class="lower_link ui-box bottom-inOutSpread">ホ ー ム</div>
                     </a>

@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="banner_slash">
         <ul class="bounce_link">
-            <li class="li_link"><a class="anchor_link" href="@@webRoot/index.html">ホーム</a></li>
+            <li class="li_link"><a class="anchor_link" href="{{ route("home") }}">ホーム</a></li>
             <li class="li_link"><a class="anchor_link" href="@@webRoot/about-us/index.html#jigyou">事業内容</a></li>
             <li class="li_link"><a class="anchor_link" href="@@webRoot/about-us/index.html#bunjochi">分譲地</a></li>
             <li class="li_link"><a class="anchor_link" href="@@webRoot/about-us/index.html#company">会社概要</a></li>

@@ -11,9 +11,17 @@
 |
 */
 
+use App\Repositories\Admin\BunjouchiRepository;
 
-use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\DB;
+
+Route::get("duplicate", function(BunjouchiRepository $bunjouchiRepository) {
+
+    $temp = $bunjouchiRepository->first()->toArray();
+
+    for ($i=0; $i<100; $i++) {
+        $bunjouchiRepository->create($temp);
+    }
+});
 
 Auth::routes();
 
