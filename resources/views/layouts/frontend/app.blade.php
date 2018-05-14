@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ja">
 <head>
-   <link rel="shortcut icon" href="{{ asset("favicon.ico") }}" type="image/x-icon"/>
-    @yield('css')
+    <title>@yield('title', 'サティア不動産')</title>
+    <meta name="description" content="@yield('description', 'サティア不動産')">
+    <meta name="keywords" content="@yield('keywords', 'サティア不動産')">
+
+    @include("layouts.frontend.partial.cpn_style")
+
+    @yield('style')
 </head>
 <body>
-@yield('content')
-@yield('scripts')
+    @include('layouts.frontend.partial.cpn_header')
+
+        @yield('content')
+
+    @include('layouts.frontend.partial.cpn_footer')
+
+    @include("layouts.frontend.partial.cpn_script")
+
+    @yield('script')
 </body>
 </html>

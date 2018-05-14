@@ -18,7 +18,7 @@ class PageController extends Controller
      */
     function home()
     {
-        return "HOME PAGE";
+        return view("home");
     }
 
 
