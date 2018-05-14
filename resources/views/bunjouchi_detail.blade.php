@@ -1,15 +1,22 @@
-@extends('backend.layouts.master')
+@extends("layouts.frontend.app")
 
-@section('title', '...')
+@section('css')
 
-@section('stylesheet')
-    <link rel="stylesheet" href="{{ asset('...') }}">
 @endsection
+
 
 @section('content')
 
+
+    @isset($bunjouchi)
+
+
+    @endisset
+
+
 @endsection
 
-@section('javascript')
-    <script src="{{ asset('...') }}"></script>
+@section('scripts')
+
 @endsection
+
