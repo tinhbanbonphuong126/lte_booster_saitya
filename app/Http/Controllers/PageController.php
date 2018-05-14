@@ -44,10 +44,10 @@ class PageController extends Controller
     function chizuSearch($id = null, RegionRepository $regionRepository, BunjouchiRepository $bunjouchiRepository)
     {
         $regions = $regionRepository->all();
-        $currentRegion = $regionRepository->find($id);
-        $schoolList = $currentRegion->school->pluck("id")->toArray();
+        $currentRegion = $regionRepository->findWithoutFail(0);
 
         if ($id) {
+            $schoolList = $currentRegion->school->pluck("id")->toArray();
             $bunjouchis = $bunjouchiRepository->findWhereIn("school_id", $schoolList);
         } else {
             $bunjouchis = $bunjouchiRepository->all();
@@ -71,7 +71,7 @@ class PageController extends Controller
     {
         if($id) {
 
-            $bunjouchi = $bunjouchiRepository->find($id);
+            $bunjouchi = $bunjouchiRepository->findWithoutFail($id);
             return view("bunjouchi-detail", compact("bunjouchi"));
         }
     }
