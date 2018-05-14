@@ -25,7 +25,7 @@ class PageController extends Controller
     function aboutUs(BunjouchiRepository $bunjouchiRepository)
     {
         $bunjouchis = $bunjouchiRepository->all();
-        return view("contact-us", compact("bunjouchis"));
+        return view("about-us", compact("bunjouchis"));
     }
 
     function schoolSearch($id = null, RegionRepository $regionRepository, BunjouchiRepository $bunjouchiRepository)
@@ -75,4 +75,5 @@ class PageController extends Controller
             return view("bunjouchi-detail", compact("bunjouchi"));
         }
     }
+
 }

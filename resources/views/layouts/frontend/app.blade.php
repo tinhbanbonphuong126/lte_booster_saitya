@@ -8,6 +8,13 @@
     @include("layouts.frontend.partial.cpn_style")
 
     @yield('style')
+    <style>
+        {{--More css for common--}}
+
+        .no_record {
+            font-size: 17px;
+        }
+    </style>
 </head>
 <body>
     @include('layouts.frontend.partial.cpn_header')
