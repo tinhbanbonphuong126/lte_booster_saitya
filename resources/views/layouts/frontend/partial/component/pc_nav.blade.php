@@ -16,25 +16,25 @@
                     </a>
                 </li>
                 <li class="">
-                    <a class="" href="@@webRoot/about-us/index.html#jigyou">
+                    <a class="" href="{{ route("aboutUs", ["#jigyou"]) }}">
                         <div class="upper_link">PROJECT</div>
                         <div class="lower_link ui-box bottom-inOutSpread">事 業 内 容</div>
                     </a>
                 </li>
                 <li class="">
-                    <a class="" href="@@webRoot/about-us/index.html#bunjochi">
+                    <a class="" href="{{ route("aboutUs", ["#bunjochi"]) }}">
                         <div class="upper_link">SEARCH</div>
                         <div class="lower_link ui-box bottom-inOutSpread">分 譲 地</div>
                     </a>
                 </li>
                 <li class="">
-                    <a class="" href="@@webRoot/about-us/index.html#company">
+                    <a class="" href="{{ route("aboutUs", ["#company"]) }}">
                         <div class="upper_link">ABOUT US</div>
                         <div class="lower_link ui-box bottom-inOutSpread">会 社 概 要</div>
                     </a>
                 </li>
                 <li class="">
-                    <a class="" href="@@webRoot/about-us/index.html#toiawase">
+                    <a class="" href="{{ route("aboutUs", ["#toiawase"]) }}">
                         <div class="upper_link">CONTACT</div>
                         <div class="lower_link ui-box bottom-inOutSpread">お問い合わせ</div>
                     </a>
