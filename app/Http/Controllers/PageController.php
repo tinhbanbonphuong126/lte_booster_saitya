@@ -44,7 +44,7 @@ class PageController extends Controller
     function chizuSearch($id = null, RegionRepository $regionRepository, BunjouchiRepository $bunjouchiRepository)
     {
         $regions = $regionRepository->all();
-        $currentRegion = $regionRepository->findWithoutFail(0);
+        $currentRegion = $regionRepository->findWithoutFail($id);
 
         if ($id) {
             $schoolList = $currentRegion->school->pluck("id")->toArray();
