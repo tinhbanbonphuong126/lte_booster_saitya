@@ -21,28 +21,16 @@ Route::any("register", function () {
 });
 
 Route::get("/", function() {
-
-    return 'Welcome';
+    return 'HomePage';
+});
+Route::get("/contact", function() {
+    return "Contact Page";
 });
 
-Route::get("/home", function () {
-    return 'OK';
-});
 
-Route::get("/list", function() {
-    $tables = DB::select('SHOW TABLES');
-    foreach ($tables as $table) {
-        echo $table->Tables_in_satya_db . ',';
-    }
-});
 
 //All Route for Admin Management
 Route::group(['middleware' => 'auth'], function () {
-
-    Route::get('/', function () {
-        return 'Dashboard';
-    });
-
 
     Route::group(['namespace' => 'Admin'], function () {
         Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
