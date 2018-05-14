@@ -179,6 +179,7 @@
                 </div>
 
                 <div class="bounce_result">
+                    @if(count($bunjouchis))
                     <div class="bounce_buirochi_kara">
                         <div class="list">
                             分譲中の分譲地一覧
@@ -189,6 +190,11 @@
                             @endforeach
                         </ul>
                     </div>
+                    @else
+                        <div style="text-align: center">
+                            @include("layouts.frontend.partial.component.cpn_no_record")
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
