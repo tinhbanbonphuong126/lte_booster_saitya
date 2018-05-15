@@ -5,7 +5,7 @@
 @section('keywords', '分譲地詳細')
 
 @section('style')
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwlkTA1L6lLnp76nr6LZ22ebIXMXNxxUY&language=ja&region=JP"></script>
+    {{--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwlkTA1L6lLnp76nr6LZ22ebIXMXNxxUY&language=ja&region=JP"></script>--}}
     <link rel="stylesheet" href="{{ asset("css/about_us_detail/about_us_detail.css") }}" type="text/css" media="all"/>
     <style tyle="text/css">
 
@@ -23,8 +23,12 @@
 
             <ul class="bound_ul">
                 <li class="cell_li">
-                    <span class="label_rui">分譲中</span>
-                    <span class="description_rui">コゾタウン長尾</span>
+                    @if($bunjouchi->status == 1)
+                        <span class="label_rui gray_item">完売御礼</span>
+                    @else
+                        <span class="label_rui">分譲中</span>
+                    @endif
+                    <span class="description_rui">{{ $bunjouchi->title }}</span>
                 </li>
             </ul>
 
@@ -36,7 +40,7 @@
                         <div class="kugazu">
                             <div class="title_blue">区画図</div>
                             <div class="img_kugazu">
-                                <img src="{{ asset("img/about-us/kugazu.png") }}" alt="区画図">
+                                <img src="{{ asset( "uploads/bunjouchis" . "/" . $bunjouchi->map_url) }}" alt="区画図">
                             </div>
                         </div>
                         <div class="butsuken">
@@ -142,7 +146,7 @@
                         <div class="map">
                             <div class="title_blue">地図</div>
                             <div class="bounce_map">
-                                <img src="{{ asset("img/about-us/map.png" }}" alt="Map Detail">
+                                <img src="{{ asset("img/about-us/map.png") }}" alt="Map Detail">
                             </div>
                         </div>
 

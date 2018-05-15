@@ -79,9 +79,8 @@ class PageController extends Controller
     function bunjouchiDetail($id = null, BunjouchiRepository $bunjouchiRepository)
     {
         if($id) {
-
             $bunjouchi = $bunjouchiRepository->findWithoutFail($id);
-            return view("bunjouchi-detail", compact("bunjouchi"));
+            return view("bunjouchi_detail", compact("bunjouchi"));
         }
     }
 
