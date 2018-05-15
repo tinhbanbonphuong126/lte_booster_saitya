@@ -86,6 +86,7 @@
 
         var markerClusterer = null;
         var map = null;
+        var infoWin = null;
 
         //Image Url foreach position cluster
         var imageUrl = 'http://chart.apis.google.com/chart?cht=mm&chs=24x32&' +
@@ -107,8 +108,17 @@
                     // draggable: true,
                     icon: markerImage,
                     //Add label for each cluster.
-                    label: "HELLO WORLD"
+                    // label: "HELLO WORLD"
                 });
+
+
+                // Event Closure Listener for each maker.
+                google.maps.event.addListener(marker, 'click', (function (marker, infowindow) {
+                    return function() {
+                        infowindow.setContent("HELLO WORLD");
+                        infowindow.open(map, marker);
+                    };
+                })(marker, infowindow));
 
                 markers.push(marker);
             }
@@ -137,6 +147,9 @@
                 center: new google.maps.LatLng(34.243809, 134.358743),
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
             });
+
+            //Set Info Window for Maker
+            infowindow = new google.maps.InfoWindow();
 
             var refresh = document.getElementById('refresh');
             google.maps.event.addDomListener(refresh, 'click', refreshMap);
