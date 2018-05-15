@@ -1,4 +1,4 @@
-<li class="{{ Request::is('admin/regions*') ? 'active' : '' }}">
+<li class="{{ Request::is('admin/regions*') ? 'active' : '' }} hidden">
     <a href="{!! route('admin.regions.index') !!}"><i class="fa fa-edit"></i><span>地名</span></a>
 </li>
 

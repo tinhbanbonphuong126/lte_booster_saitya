@@ -80,7 +80,12 @@ class PageController extends Controller
     {
         if($id) {
             $bunjouchi = $bunjouchiRepository->findWithoutFail($id);
-            return view("bunjouchi_detail", compact("bunjouchi"));
+            if($bunjouchi) {
+                $prices = $bunjouchi->prices;
+            } else {
+                $prices = [];
+            }
+            return view("bunjouchi_detail", compact("bunjouchi", "prices"));
         }
     }
 

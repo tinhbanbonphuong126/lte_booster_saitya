@@ -49,39 +49,39 @@
                                 <ul>
                                     <li class="cell_li_child">
                                         <span class="before">・住所</span>
-                                        <span class="after">丸亀市金倉町</span>
+                                        <span class="after">{{ $bunjouchi->address }}</span>
                                     </li>
                                     <li class="cell_li_child">
                                         <span class="before">・土地面積</span>
-                                        <span class="after">204.35㎡(61.81坪)～301.19㎡(93.23坪)</span>
+                                        <span class="after">{{ $bunjouchi->land_area }}</span>
                                     </li>
                                     <li class="cell_li_child">
                                         <span class="before">・地目</span>
-                                        <span class="after">宅地</span>
+                                        <span class="after">{{ $bunjouchi->ground }}</span>
                                     </li>
                                     <li class="cell_li_child">
                                         <span class="before">・総区画</span>
-                                        <span class="after">11区画</span>
+                                        <span class="after">{{ $bunjouchi->total_parcel }}</span>
                                     </li>
                                     <li class="cell_li_child">
                                         <span class="before">・建ぺい率</span>
-                                        <span class="after">70％</span>
+                                        <span class="after">{{ $bunjouchi->construction_pay_rate }}</span>
                                     </li>
                                     <li class="cell_li_child">
                                         <span class="before">・容積率</span>
-                                        <span class="after">200％</span>
+                                        <span class="after">{{ $bunjouchi->floor_area_ratio }}</span>
                                     </li>
                                     <li class="cell_li_child">
                                         <span class="before">・用途地域</span>
-                                        <span class="after">無指定</span>
+                                        <span class="after">{{ $bunjouchi->usage_area }}</span>
                                     </li>
                                     <li class="cell_li_child">
                                         <span class="before">・排水</span>
-                                        <span class="after">浄化槽</span>
+                                        <span class="after">{{ $bunjouchi->drainage }}</span>
                                     </li>
                                     <li class="cell_li_child">
                                         <span class="before">・取引態様</span>
-                                        <span class="after">売主</span>
+                                        <span class="after">{{ $bunjouchi->dealing_status }}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -91,54 +91,12 @@
                             <div class="title_blue">価格</div>
                             <div class="bounce_kakaku">
                                 <ul>
+                                    @foreach($prices as $key_price => $price)
                                     <li class="cell_li_child">
-                                        <span class="before">1号地</span>
-                                        <span class="after">227.75㎡	68.89坪	13万円</span>
+                                        <span class="before">{{ $price->bangou }}号地</span>
+                                        <span class="after">{{ $price->description }}</span>
                                     </li>
-                                    <li class="cell_li_child">
-                                        <span class="before">2号地</span>
-                                        <span class="after">売約済み</span>
-                                    </li>
-                                    <li class="cell_li_child">
-                                        <span class="before">3号地</span>
-                                        <span class="after">217.62㎡	65.83坪	13万円</span>
-                                    </li>
-                                    <li class="cell_li_child">
-                                        <span class="before">4号地</span>
-                                        <span class="after">売約済み</span>
-                                    </li>
-                                    <li class="cell_li_child">
-                                        <span class="before">5号地</span>
-                                        <span class="after">売約済み</span>
-                                    </li>
-                                    <li class="cell_li_child">
-                                        <span class="before">6号地</span>
-                                        <span class="after">売約済み</span>
-                                    </li>
-                                    <li class="cell_li_child">
-                                        <span class="before">7号地</span>
-                                        <span class="after">売約済み</span>
-                                    </li>
-                                    <li class="cell_li_child">
-                                        <span class="before">8号地</span>
-                                        <span class="after">売約済み</span>
-                                    </li>
-                                    <li class="cell_li_child">
-                                        <span class="before">9号地</span>
-                                        <span class="after">243.01㎡	73.51坪	12.8万円</span>
-                                    </li>
-                                    <li class="cell_li_child">
-                                        <span class="before">10号地</span>
-                                        <span class="after">244.86㎡	74.07坪	12.8万円</span>
-                                    </li>
-                                    <li class="cell_li_child">
-                                        <span class="before">11号地</span>
-                                        <span class="after">売約済み</span>
-                                    </li>
-                                    <li class="cell_li_child">
-                                        <span class="before">12号地</span>
-                                        <span class="after">204.35㎡	61.81坪	12.8万円</span>
-                                    </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -151,7 +109,7 @@
                         </div>
 
                         <div class="shiryou_download">
-                            <a class="btn_download" href="javacript:;" download>資料ダウンロードはこちら</a>
+                            <a class="btn_download" href="{{ asset("uploads/bunjouchis") . "/" . $bunjouchi->document_url }}" download>資料ダウンロードはこちら</a>
                         </div>
                     </div>
                 </div>
