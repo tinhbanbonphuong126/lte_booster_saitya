@@ -16,7 +16,7 @@
                 <div class='btn-group'>
                     <a href="{!! route('admin.regions.show', [$region->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
                     <a href="{!! route('admin.regions.edit', [$region->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
-                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('削除よろしいですか？')"]) !!}
+                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs hidden', 'onclick' => "return confirm('削除よろしいですか？')"]) !!}
                 </div>
                 {!! Form::close() !!}
             </td>
