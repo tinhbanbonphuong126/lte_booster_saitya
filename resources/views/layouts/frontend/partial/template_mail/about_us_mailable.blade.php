@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!--<![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style type="text/css">  #outlook a {
+    <style type="text/css">
+        p {
+            margin-top: 0!important;
+            margin-bottom: 0!important;
+        }
+
+        #outlook a {
             padding: 0;
         }
         .ReadMsgBody {
