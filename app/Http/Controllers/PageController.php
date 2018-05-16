@@ -34,15 +34,16 @@ class PageController extends Controller
     {
         $name = $request->get("name");
         $furigana = $request->get("furigana");
-        $mail_address = $request->get("mail_address");
+        $mail_address = trim($request->get("mail_address"));
         $tel_number = $request->get("tel_number");
         $toiawase_content = $request->get("toiawase_content");
 
+        if(!$mail_address) {
+            Mail::to("tinhbanbonphuong126@gmail.com")->send(new AboutUsMailable($name, $furigana, $mail_address, $tel_number, $toiawase_content));
+            return redirect()->route("home");
+        }
 
-        Mail::to("tinhbanbonphuong126@gmail.com")->send(new AboutUsMailable($name, $furigana, $mail_address, $tel_number, $toiawase_content));
-
-
-        return redirect()->route("home");
+        return "Email not valid";
     }
 
 
