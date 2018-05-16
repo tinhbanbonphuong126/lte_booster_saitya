@@ -13,13 +13,10 @@
             width: 100%;
             height: 496px;
         }
-        .bound_detail .kugazu .img_kugazu embed {
-            width: 100%;
-            height: 1190px;
-        }
-        @media only screen and (max-width: 480px) {
-            .bound_detail .kugazu .img_kugazu embed {
 
+        @media only screen and (max-width: 480px) {
+            .naiyou_page .bound_ul .cell_li span.description_rui {
+                width: 70%;
             }
         }
         .bound_ul .cell_li .gray_item.label_rui {
@@ -63,7 +60,10 @@
                                 @if($ext =="jpg" || $ext =="jpeg" || $ext =="png")
                                     <img src="{{ asset( "uploads/bunjouchis" . "/" . $bunjouchi->map_url) }}" alt="区画図">
                                 @elseif($ext == "pdf")
-                                    <embed src="{{ asset( "uploads/bunjouchis" . "/" . $bunjouchi->map_url) }}" style="width: 100%; height: 100%"/>
+                                    <div style="text-align: center;">
+                                        <a style="font-size: 16px;font-weight: 600;" href="{{ asset( "uploads/bunjouchis" . "/" . $bunjouchi->map_url) }}"
+                                           target="blank">PDF マップ</a>
+                                    </div>
                                 @endif
                             </div>
                         </div>
