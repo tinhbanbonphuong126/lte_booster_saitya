@@ -133,13 +133,18 @@ $(function () {
                 console.log(address);
 
                 geolocator.geocode(address, function (err, location) {
-                    if (err) {
-                        $("#address[name='address']").css("border", "1px solid red");
-                    } else {
-                        console.log(location);
+                    console.log(location);
+                    console.log(location.address.country);
+
+                    if ((location.address.country == "日本")) {
                         $("#address[name='address']").css("border", "1px solid green");
                         $("#latitude[name='latitude']").val(location.coords.latitude);
                         $("#longitude[name='longitude']").val(location.coords.longitude);
+                    } else {
+                        $("#address[name='address']").css("border", "1px solid red");
+                        $("#latitude[name='latitude']").val("");
+                        $("#longitude[name='longitude']").val("");
+
                     }
                 });
             }

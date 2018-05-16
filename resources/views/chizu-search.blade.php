@@ -280,6 +280,10 @@
             zoom = zoom === -1 ? null : zoom;
             size = size === -1 ? null : size;
             style = style === -1 ? null : style;
+
+            //I you want no using maker cluster for multi maker
+            size = 1;
+
             markerClusterer = new MarkerClusterer(map, markers, {
                 maxZoom: zoom,
                 gridSize: size,
@@ -288,7 +292,7 @@
             });
             //End of Control
 
-            markerClusterer.clearMarkers();
+            // markerClusterer.clearMarkers();
         }
 
         function initialize() {
