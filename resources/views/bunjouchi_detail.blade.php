@@ -20,7 +20,7 @@
 
     <div class="main-content">
         <div class="top_banner_gazou">
-            {{--@include("layouts.frontend.partial.component.cpn_header_banner_gazou")--}}
+            @include("layouts.frontend.partial.component.cpn_header_banner_gazou")
         </div>
 
         <div class="naiyou_page container">
