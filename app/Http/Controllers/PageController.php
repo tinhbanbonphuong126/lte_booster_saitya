@@ -70,7 +70,7 @@ class PageController extends Controller
             $schoolList = $currentRegion->school->pluck("id")->toArray();
             $bunjouchis = $bunjouchiRepository->findWhereIn("school_id", $schoolList);
         } else {
-            $bunjouchis = $bunjouchiRepository->all();
+            $bunjouchis = $bunjouchiRepository->findWhere(["status" => "0"]);
         }
 
         return view("chizu-search", compact('currentRegion', 'regions', 'bunjouchis'));

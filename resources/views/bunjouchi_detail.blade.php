@@ -113,7 +113,9 @@
                         </div>
 
                         <div class="shiryou_download">
+                            @if($bunjouchi->document_url)
                             <a class="btn_download" href="{{ asset("uploads/bunjouchis") . "/" . $bunjouchi->document_url }}" download>資料ダウンロードはこちら</a>
+                            @endif
                         </div>
                     </div>
                 </div>

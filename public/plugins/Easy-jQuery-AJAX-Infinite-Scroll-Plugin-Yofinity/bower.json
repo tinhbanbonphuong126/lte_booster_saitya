@@ -1,0 +1,30 @@
+{
+  "name": "yohoho.yofinity",
+  "version": "1.0.3",
+  "homepage": "https://github.com/crewstyle/yohoho.yofinity",
+  "authors": [
+    "Achraf Chouk <achrafchouk@gmail.com>"
+  ],
+  "description": "An infinite scroll jQuery plugin",
+  "main": [
+    "dist/yofinity.min.js"
+  ],
+  "keywords": [
+    "yofinity",
+    "infinite",
+    "scroll",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "*"
+  }
+}

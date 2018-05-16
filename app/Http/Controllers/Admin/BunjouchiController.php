@@ -37,7 +37,7 @@ class BunjouchiController extends AppBaseController
     public function index(Request $request)
     {
         $this->bunjouchiRepository->pushCriteria(new RequestCriteria($request));
-        $bunjouchis = $this->bunjouchiRepository->orderBy('updated_at', 'DESC')->paginate(20);
+        $bunjouchis = $this->bunjouchiRepository->orderBy('updated_at', 'DESC')->paginate(10);
 
         return view('admin.bunjouchis.index')
             ->with('bunjouchis', $bunjouchis);
