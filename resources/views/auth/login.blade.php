@@ -83,16 +83,16 @@
             </div>
 
             <div class="row">
-                <div class="col-xs-8">
-                    <div class="checkbox icheck hidden">
-                        <label>
-                            <input type="checkbox" name="remember"> Remember Me
-                        </label>
-                    </div>
-                    <a style="margin-top: 12px;display: inline-block;" href="{{ url('/password/reset') }}">パスワードを忘れた場合は</a><br>
-                </div>
+                {{--<div class="col-xs-8">--}}
+                    {{--<div class="checkbox icheck hidden">--}}
+                        {{--<label>--}}
+                            {{--<input type="checkbox" name="remember"> Remember Me--}}
+                        {{--</label>--}}
+                    {{--</div>--}}
+                    {{--<a style="margin-top: 12px;display: inline-block; display: none;" href="{{ url('/password/reset') }}">パスワードを忘れた場合は</a><br>--}}
+                {{--</div>--}}
                 <!-- /.col -->
-                <div class="col-xs-4">
+                <div class="col-xs-6 col-xs-offset-3">
                     <button id="btnSubmit" type="submit" class="btn btn-primary btn-block btn-flat" style="padding-left: 0;padding-right: 0;text-align: center;">サインイン</button>
                 </div>
                 <!-- /.col -->

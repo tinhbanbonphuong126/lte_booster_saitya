@@ -13,6 +13,18 @@
             width: 100%;
             height: 496px;
         }
+        .bound_detail .kugazu .img_kugazu embed {
+            width: 100%;
+            height: 1190px;
+        }
+        @media only screen and (max-width: 480px) {
+            .bound_detail .kugazu .img_kugazu embed {
+
+            }
+        }
+        .bound_ul .cell_li .gray_item.label_rui {
+            background-color: #9FA0A0!important;
+        }
     </style>
 @endsection
 
@@ -44,7 +56,15 @@
                         <div class="kugazu">
                             <div class="title_blue">区画図</div>
                             <div class="img_kugazu">
-                                <img src="{{ asset( "uploads/bunjouchis" . "/" . $bunjouchi->map_url) }}" alt="区画図">
+                                @php
+                                $ext = pathinfo($bunjouchi->map_url, PATHINFO_EXTENSION);
+                                @endphp
+
+                                @if($ext =="jpg" || $ext =="jpeg" || $ext =="png")
+                                    <img src="{{ asset( "uploads/bunjouchis" . "/" . $bunjouchi->map_url) }}" alt="区画図">
+                                @elseif($ext == "pdf")
+                                    <embed src="{{ asset( "uploads/bunjouchis" . "/" . $bunjouchi->map_url) }}" style="width: 100%; height: 100%"/>
+                                @endif
                             </div>
                         </div>
                         <div class="butsuken">

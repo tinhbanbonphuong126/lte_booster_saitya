@@ -6,7 +6,7 @@
 
 <!-- Title Field -->
 <div class="form-group">
-    {!! Form::label('title', '容積率:') !!}
+    {!! Form::label('title', 'タイトル:') !!}
     <p>{!! $bunjouchi->title !!}</p>
 </div>
 
@@ -85,7 +85,7 @@
 
 @foreach($bunjouchi->prices as $price)
     <div class="form-group">
-        {!! Form::label('', $price->bangou . ' 番号:') !!}
+        {!! Form::label('', $price->bangou . ' 号地:') !!}
         <p>
             {{ $price->description }}
         </p>
