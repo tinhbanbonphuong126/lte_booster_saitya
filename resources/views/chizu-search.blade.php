@@ -68,7 +68,7 @@
                         <div id="map-container">
                             <div id="map"></div>
                         </div>
-                        <div id="inline-actions" class="">
+                        <div id="inline-actions" class="hidden">
                           <span>Max zoom level:
                             <select id="zoom">
                               <option value="-1">Default</option>
