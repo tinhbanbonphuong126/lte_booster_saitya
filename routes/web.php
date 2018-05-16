@@ -42,6 +42,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::group(['namespace' => 'Admin'], function () {
         Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
             Route::get('/', function() {
+                return redirect()->route("admin.bunjouchis.index");
                 return view("admin.dashboard");
             });
 

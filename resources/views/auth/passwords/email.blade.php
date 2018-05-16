@@ -39,7 +39,7 @@
 
     <!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg" style="font-zize: 11px">メールアドレスを入力してパスワードをリセットする</p>
+        <p class="login-box-msg" style="font-size: 11px">メールアドレスを入力してパスワードをリセットする</p>
 
         @if (session('status'))
             <div class="alert alert-success">
