@@ -53,9 +53,9 @@ class PageController extends Controller
         $regions = $regionRepository->all();
 
         if($id) {
-            $bunjouchis = $bunjouchiRepository->findWhere(["school_id" => $id]);
+            $bunjouchis = $bunjouchiRepository->findWhere(["status" => "0"])->findWhere(["school_id" => $id]);
         } else {
-            $bunjouchis = $bunjouchiRepository->all();
+            $bunjouchis = $bunjouchiRepository->findWhere(["status" => "0"]);
         }
 
         return view("school-search", compact('regions','bunjouchis'));
@@ -68,7 +68,7 @@ class PageController extends Controller
 
         if ($id) {
             $schoolList = $currentRegion->school->pluck("id")->toArray();
-            $bunjouchis = $bunjouchiRepository->findWhereIn("school_id", $schoolList);
+            $bunjouchis = $bunjouchiRepository->findWhere(["status" => "0"])->findWhereIn("school_id", $schoolList);
         } else {
             $bunjouchis = $bunjouchiRepository->findWhere(["status" => "0"]);
         }
@@ -79,9 +79,9 @@ class PageController extends Controller
     function ekiSearch($id = null, BunjouchiRepository $bunjouchiRepository)
     {
         if ($id) {
-            $bunjouchis = $bunjouchiRepository->findWhere(["station_id" => $id]);
+            $bunjouchis = $bunjouchiRepository->findWhere(["status" => "0"])->findWhere(["station_id" => $id]);
         } else {
-            $bunjouchis = $bunjouchiRepository->all();
+            $bunjouchis = $bunjouchiRepository->findWhere(["status" => "0"]);
         }
 
         return view("eki-search", compact("bunjouchis"));

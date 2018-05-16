@@ -271,6 +271,7 @@
                 }
             }
 
+
             //Control Google API
             var zoom = parseInt(document.getElementById('zoom').value, 10);
             var size = parseInt(document.getElementById('size').value, 10);
@@ -286,6 +287,8 @@
                 imagePath: '/images-cluster/m'
             });
             //End of Control
+
+            markerClusterer.clearMarkers();
         }
 
         function initialize() {
