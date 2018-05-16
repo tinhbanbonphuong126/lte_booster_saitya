@@ -31,10 +31,10 @@ $(function () {
             }
 
             var $map = {
-                lng: 133.77955,
-                lat: 34.231096,
+                lng: 133.7939939,
+                lat: 34.2901672,
                 getId: 'googleMap',
-                setContent: "本　社    〒765-0011　香川県善通寺市上吉田町8-5-19　TEL0877-63-1933  FAX 0877-63-1944"
+                setContent: "サティヤ不動産 - 〒763-0024 香川県丸亀市 塩飽町11番地1 SATYA.BLD 2F"
             };
 
             createMap($map);

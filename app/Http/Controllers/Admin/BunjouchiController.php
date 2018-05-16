@@ -229,7 +229,7 @@ class BunjouchiController extends AppBaseController
         }
 
 
-        Flash::success('Bunjouchi updated successfully.');
+        Flash::success('分譲地は更新されました。');
 
         return redirect(route('admin.bunjouchis.index'));
     }
@@ -253,7 +253,7 @@ class BunjouchiController extends AppBaseController
 
         $this->bunjouchiRepository->delete($id);
 
-        Flash::success('Bunjouchi deleted successfully.');
+        Flash::success('分譲地は削除されました。');
 
         return redirect(route('admin.bunjouchis.index'));
     }

@@ -27,6 +27,8 @@
 
 
 @section('scripts')
+    <script type="text/javascript" src="{{ asset("plugins/geolocator-master/dist/geolocator.js") }}"></script>
+
     <script type="text/javascript" src="{{ asset('plugins/chained/jquery.chained.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugins/bootstrap-fileinput/js/fileinput.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugins/bootstrap-fileinput/js/locales/ja.js') }}"></script>

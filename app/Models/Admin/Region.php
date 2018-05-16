@@ -29,7 +29,9 @@ class Region extends Model
 
     public $fillable = [
         'name',
-        'img'
+        'img',
+        'latitude',
+        'longitude'
     ];
 
     /**
@@ -40,7 +42,9 @@ class Region extends Model
     protected $casts = [
         'id' => 'integer',
         'name' => 'string',
-        'img' => 'string'
+        'img' => 'string',
+        'latitude' => 'float',
+        'longitude' => 'float'
     ];
 
     /**

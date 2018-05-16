@@ -63,18 +63,18 @@
                                      class="img-circle" alt="User Image"/>
                                 <p>
                                     admin
-                                    <small>Member since May. 2018</small>
+                                    <small class="hidden">Member since May. 2018</small>
                                 </p>
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">
-                                <div class="pull-left">
+                                <div class="pull-left hidden">
                                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
                                     <a href="http://localhost:8080/logout" class="btn btn-default btn-flat"
                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                        Sign out
+                                        ログアウト
                                     </a>
                                     <form id="logout-form" action="http://localhost:8080/logout" method="POST"
                                           style="display: none;">
@@ -121,29 +121,32 @@
         <!-- Sidebar Menu -->
 
         <ul class="sidebar-menu">
-            <li class=" hidden">
-    <a href="http://localhost:8080/admin/regions"><i class="fa fa-edit"></i><span>地名</span></a>
-</li>
-
-<li class=" hidden">
-    <a href="http://localhost:8080/admin/schools"><i class="fa fa-edit"></i><span>校区</span></a>
-</li>
-
-<li class=" hidden">
-    <a href="http://localhost:8080/admin/routes"><i class="fa fa-edit"></i><span>路線</span></a>
-</li>
-
-<li class=" hidden">
-    <a href="http://localhost:8080/admin/stations"><i class="fa fa-edit"></i><span>駅</span></a>
-</li><li class="">
-</li>
-
-<li class="">
-    <a href="http://localhost:8080/admin/bunjouchis"><i class="fa fa-edit"></i><span>分譲地</span></a>
-</li>
-
+            
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+<ul class="sidebar-menu">
+    <li class="treeview active">
+        <a href="javascript:;">
+            <i class="fa fa-share"></i> <span>分譲地</span>
+            <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+      </span>
+        </a>
+        <ul class="treeview-menu">
+            <li><a href="http://localhost:8080/admin/bunjouchis/create"><i class="fa fa-circle-o"></i> 新規登録</a></li>
+            <li>
+                <a href="http://localhost:8080/admin/bunjouchis"><i class="fa fa-circle-o"></i> リスト
+                    <span class="pull-right-container">
+                        
+                    </span>
+                </a>
+                
+            </li>
+        </ul>
+    </li>
+</ul>            
         </ul>
         <!-- /.sidebar-menu -->
+
     </section>
     <!-- /.sidebar -->
 </aside><!-- Content Wrapper. Contains page content -->
@@ -450,13 +453,18 @@
 
     <script type="text/javascript">
 
-        
+        //Get token from header website.
+        var token = $('meta[name="csrf-token"]').attr('content');
+        //Get base url base sent to Google Map API
+        var urlBaseGetLocation = "http://www.geocoding.jp/api/q=";
 
+        //Config for Map URL
         $("#map_url").fileinput({
             language: "ja",
             allowedFileExtensions: ["jpg", "png", "pdf"],
         });
 
+        //Config for Document URL
         $("#document_url").fileinput({
             language: "ja",
             allowedFileExtensions: ["pdf"]
@@ -465,11 +473,44 @@
         $(function() {
           // jQuery goes here...
 
-            $('.file').css('visibility', 'visible');
+            initial();
+            getLocationAPI();
+
+            function initial() {
+                $('.file').css('visibility', 'visible');
 
 
-            $("#school_id").chained("#region_id");
-            $("#station_id").chained("#route_id");
+                $("#school_id").chained("#region_id");
+                $("#station_id").chained("#route_id");
+            }
+
+
+            //Function handle send and get Ajax Google Map API XML
+            function getLocationAPI() {
+                $("#address[name='address']").on("focusout", function(event) {
+                    var address = $(this).val();
+
+                    if(address = address.trim()) {
+
+                        console.log(address);
+
+                        $.ajax({
+                            url: urlBaseGetLocation + address,
+                            method: "GET",
+                            headers: {'X-CSRF-TOKEN': token},
+                            beforeSend: function() {
+                                console.log("Data Send");
+                                console.log(url);
+                            },
+                            success: function (response) {
+                                console.log(response);
+                            }
+                        });
+
+                    }
+                });
+            }
+
         });
     </script>
 </body>

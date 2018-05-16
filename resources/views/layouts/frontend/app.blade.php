@@ -14,6 +14,7 @@
         .no_record {
             font-size: 17px;
         }
+
     </style>
 </head>
 <body>

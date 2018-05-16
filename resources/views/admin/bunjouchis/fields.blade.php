@@ -17,9 +17,12 @@
 </div>
 
 <!-- Address Field -->
-<div class="form-group col-sm-12">
+<div class="form-group col-sm-12 handle_geo_result">
     {!! Form::label('address', '住所:') !!}
     {!! Form::text('address', null, ['class' => 'form-control']) !!}
+
+    <input type="hidden" id="latitude" name="latitude" value="">
+    <input type="hidden" id="longitude" name="longitude" value="">
 </div>
 
 <!-- Land Area Field -->

@@ -33,9 +33,12 @@
         <!-- Sidebar Menu -->
 
         <ul class="sidebar-menu">
-            @include('layouts.menu')
+            {{--@include('layouts.menu')--}}
+            @include('layouts.menu_tree')
+            {{--@include('layouts.menu_template')--}}
         </ul>
         <!-- /.sidebar-menu -->
+
     </section>
     <!-- /.sidebar -->
 </aside>

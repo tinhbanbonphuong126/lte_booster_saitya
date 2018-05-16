@@ -7,9 +7,7 @@
 @section('style')
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwlkTA1L6lLnp76nr6LZ22ebIXMXNxxUY&language=ja&region=JP"></script>
     <link rel="stylesheet" href="{{ asset("css/home/home.css") }}" type="text/css" media="all"/>
-    <style tyle="text/css">
 
-    </style>
 @endsection
 
 @section('content')

@@ -5,10 +5,14 @@
 @section('keywords', '分譲地詳細')
 
 @section('style')
-    {{--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwlkTA1L6lLnp76nr6LZ22ebIXMXNxxUY&language=ja&region=JP"></script>--}}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwlkTA1L6lLnp76nr6LZ22ebIXMXNxxUY&language=ja&region=JP"></script>
     <link rel="stylesheet" href="{{ asset("css/about_us_detail/about_us_detail.css") }}" type="text/css" media="all"/>
     <style tyle="text/css">
-
+        .main-content .naiyou_page .bunjochi_detail .detail_li .bound_detail .map .bounce_map {
+            opacity: 1;
+            width: 100%;
+            height: 496px;
+        }
     </style>
 @endsection
 
@@ -16,7 +20,7 @@
 
     <div class="main-content">
         <div class="top_banner_gazou">
-            @include("layouts.frontend.partial.component.cpn_header_banner_gazou")
+            {{--@include("layouts.frontend.partial.component.cpn_header_banner_gazou")--}}
         </div>
 
         <div class="naiyou_page container">
@@ -103,8 +107,8 @@
 
                         <div class="map">
                             <div class="title_blue">地図</div>
-                            <div class="bounce_map">
-                                <img src="{{ asset("img/about-us/map.png") }}" alt="Map Detail">
+                            <div id="bounce_map" class="bounce_map">
+                                {{--<img src="{{ asset("img/about-us/map.png") }}" alt="Map Detail">--}}
                             </div>
                         </div>
 
@@ -121,8 +125,13 @@
 @endsection
 
 @section('script')
-    <script type="text/javascript" src="{{ asset("js/about-us/about-us.js") }}"></script>
     <script type="text/javascript">
-        <!--Javascript here-->
+        var mapObject = {
+            lng: {{ $bunjouchi->longitude }},
+            lat: {{ $bunjouchi->latitude }},
+            getId: 'bounce_map',
+            setContent: "{{ $bunjouchi->address }}"
+        };
     </script>
+    <script type="text/javascript" src="{{ asset("js/about-us/about-us-detail.js") }}"></script>
 @endsection

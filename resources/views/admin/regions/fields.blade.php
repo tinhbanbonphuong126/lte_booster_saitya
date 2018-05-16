@@ -8,6 +8,9 @@
 <div class="form-group col-sm-6">
     {!! Form::label('img', 'Img:') !!}
     {!! Form::text('img', null, ['class' => 'form-control']) !!}
+
+    <input type="hidden" name="latitude" id="latitude" value="">
+    <input type="hidden" name="longitude" id="longitude" value="">
 </div>
 
 <!-- Submit Field -->

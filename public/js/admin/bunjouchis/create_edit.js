@@ -74,10 +74,15 @@
 $(function () {
     // jQuery goes here...
 
+    //Get base url base sent to Google Map API
+    var API_KEY = "AIzaSyCwlkTA1L6lLnp76nr6LZ22ebIXMXNxxUY";
+
     reset();
 
     handleAddBlock();
     handleDeleteBlock();
+
+    getLocationAPI();
 
     function reset() {
 
@@ -111,6 +116,43 @@ $(function () {
                 $current.remove();
 
                 reset();
+            }
+        });
+    }
+
+    //Function handle send and get Ajax Google Map API XML
+    function getLocationAPI() {
+
+        geoLocatorConfig();
+
+        $("#address[name='address']").on("focusout", function (event) {
+            var address = $(this).val();
+
+            if (address = address.trim()) {
+
+                console.log(address);
+
+                geolocator.geocode(address, function (err, location) {
+                    if (err) {
+                        $("#address[name='address']").css("border", "1px solid red");
+                    } else {
+                        console.log(location);
+                        $("#address[name='address']").css("border", "1px solid green");
+                        $("#latitude[name='latitude']").val(location.coords.latitude);
+                        $("#longitude[name='longitude']").val(location.coords.longitude);
+                    }
+                });
+            }
+        });
+    }
+
+    function geoLocatorConfig() {
+        geolocator.config({
+            language: "ja",
+            https: true,
+            google: {
+                version: 3,
+                key: API_KEY || '' // YOUR-GOOGLE-API-KEY
             }
         });
     }

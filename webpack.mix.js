@@ -23,6 +23,8 @@ mix.browserSync({
 });
 
 
+mix.webpackConfig({devtool: "source-map"});
+
 mix.sass('resources/assets/sass/admin/app.scss', 'public/css/admin')
     .sass('resources/assets/sass/admin/bunjouchis/bunjouchis.scss', 'public/css/admin/bunjouchis')
     .sourceMaps();
@@ -36,18 +38,18 @@ mix.sass('resources/assets/sass/admin/app.scss', 'public/css/admin')
     // });
 
 
-mix.webpackConfig({devtool: "source-map"});
+
 
 
 
 
 //Combine jQuery
 
-mix.js('resources/assets/js/admin/app.js', 'public/js/admin')
-    .sourceMaps();
+// mix.js('resources/assets/js/admin/app.js', 'public/js/admin')
+//     .sourceMaps();
 
 
-mix.js('resources/assets/js/admin/bunjouchis/list.js', 'public/js/admin/bunjouchis/')
-mix.js('resources/assets/js/admin/bunjouchis/show.js', 'public/js/admin/bunjouchis/')
-mix.js('resources/assets/js/admin/bunjouchis/create_edit.js', 'public/js/admin/bunjouchis/')
-    .sourceMaps();
+// mix.js('resources/assets/js/admin/bunjouchis/list.js', 'public/js/admin/bunjouchis/')
+// mix.js('resources/assets/js/admin/bunjouchis/show.js', 'public/js/admin/bunjouchis/')
+// mix.js('resources/assets/js/admin/bunjouchis/create_edit.js', 'public/js/admin/bunjouchis/')
+//     .sourceMaps();

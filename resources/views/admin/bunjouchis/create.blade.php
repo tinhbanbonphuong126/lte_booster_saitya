@@ -30,20 +30,23 @@
 @endsection
 
 @section('scripts')
+    <script type="text/javascript" src="{{ asset("plugins/geolocator-master/dist/geolocator.js") }}"></script>
+
     <script type="text/javascript" src="{{ asset('plugins/chained/jquery.chained.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('plugins/xml_json/xml2json.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugins/bootstrap-fileinput/js/fileinput.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugins/bootstrap-fileinput/js/locales/ja.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/admin/bunjouchis/create_edit.js') }}"></script>
 
     <script type="text/javascript">
 
-        {{--Init--}}
-
+        //Config for Map URL
         $("#map_url").fileinput({
             language: "ja",
             allowedFileExtensions: ["jpg", "png", "pdf"],
         });
 
+        //Config for Document URL
         $("#document_url").fileinput({
             language: "ja",
             allowedFileExtensions: ["pdf"]
@@ -52,11 +55,16 @@
         $(function() {
           // jQuery goes here...
 
-            $('.file').css('visibility', 'visible');
+            initial();
+
+            function initial() {
+                $('.file').css('visibility', 'visible');
 
 
-            $("#school_id").chained("#region_id");
-            $("#station_id").chained("#route_id");
+                $("#school_id").chained("#region_id");
+                $("#station_id").chained("#route_id");
+            }
+
         });
     </script>
 @endsection
