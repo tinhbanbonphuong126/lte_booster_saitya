@@ -252,6 +252,7 @@
 @endsection
 
 @section('script')
+
     <script type="text/javascript" src="{{ asset("plugins/jquery_validator/jquery.validate.min.js") }}"></script>
     <script type="text/javascript" src="{{ asset("js/validationConfig.js") }}"></script>
     <script type="text/javascript" src="{{ asset("js/about-us/about-us.js") }}"></script>

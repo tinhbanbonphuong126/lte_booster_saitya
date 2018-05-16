@@ -47,6 +47,7 @@ class PageController extends Controller
     }
 
 
+
     function schoolSearch($id = null, RegionRepository $regionRepository, BunjouchiRepository $bunjouchiRepository)
     {
         $regions = $regionRepository->all();
