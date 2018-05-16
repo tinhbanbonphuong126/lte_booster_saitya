@@ -38,7 +38,7 @@ class PageController extends Controller
         $tel_number = $request->get("tel_number");
         $toiawase_content = $request->get("toiawase_content");
 
-        if(!$mail_address) {
+        if($mail_address) {
             Mail::to("tinhbanbonphuong126@gmail.com")->send(new AboutUsMailable($name, $furigana, $mail_address, $tel_number, $toiawase_content));
             return redirect()->route("home");
         }
