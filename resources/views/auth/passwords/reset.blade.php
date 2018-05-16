@@ -33,7 +33,7 @@
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
-    <div class="login-logo">
+    <div class="login-logo" style="font-size: 28px;">
         <a href="{{ url('/home') }}"><b>サティヤ不動産 </b>管理画面</a>
     </div>
 
