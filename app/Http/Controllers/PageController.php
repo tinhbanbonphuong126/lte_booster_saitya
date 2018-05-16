@@ -30,7 +30,11 @@ class PageController extends Controller
 
     function submitForm(Request $request)
     {
-
+        $name = $request->get("name");
+        $furigana = $request->get("furigana");
+        $mail_address = $request->get("name");
+        $tel_number = $request->get("tel_number");
+        $toiawase_content = $request->get("toiawase_content");
 
 
         return redirect()->route("home");
