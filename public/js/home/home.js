@@ -31,10 +31,10 @@ $(function () {
             }
 
             var $map = {
-                lng: 133.7939939,
-                lat: 34.2901672,
+                lng: 133.8134757,
+                lat: 34.2950305,
                 getId: 'googleMap',
-                setContent: "サティヤ不動産 - 〒763-0024 香川県丸亀市 塩飽町11番地1 SATYA.BLD 2F"
+                setContent: "（株）ＳＡＴＹＡ"
             };
 
             createMap($map);

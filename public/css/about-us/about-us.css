@@ -16,7 +16,7 @@
 
 * .cpn_header_banner_gazou {
   opacity: 1;
-  height: 312px;
+  height: 212px;
   width: 100%;
   background: url("../../img/common/banner_gazou.png") top;
   background-size: cover;
@@ -96,9 +96,9 @@
    for font-size and font-family*/ }
   @media only screen and (max-width: 480px) {
     * .circle-text {
-      font-size: 26px;
-      width: 170px;
-      height: 170px; } }
+      font-size: 20px;
+      width: 130px;
+      height: 130px; } }
 
 * .cpn_title {
   opacity: 1;
@@ -622,35 +622,35 @@
             margin-top: 17px; }
 
 #jigyou {
-  margin-top: -352px;
-  padding-top: 352px; }
+  margin-top: -252px;
+  padding-top: 252px; }
   @media only screen and (max-width: 480px) {
     #jigyou {
-      margin-top: -30px;
-      padding-top: 30px; } }
+      margin-top: -200px;
+      padding-top: 200px; } }
 
 #bunjochi {
   margin-top: -407px;
   padding-top: 407px; }
   @media only screen and (max-width: 480px) {
     #bunjochi {
-      margin-top: -80px;
-      padding-top: 80px; } }
+      margin-top: -230px;
+      padding-top: 230px; } }
 
 #company {
-  margin-top: -312px;
-  padding-top: 312px; }
+  margin-top: -212px;
+  padding-top: 212px; }
   @media only screen and (max-width: 480px) {
     #company {
-      margin-top: -30px;
-      padding-top: 30px; } }
+      margin-top: -200px;
+      padding-top: 200px; } }
 
 #toiawase {
-  margin-top: -357px;
-  padding-top: 312px; }
+  margin-top: -257px;
+  padding-top: 212px; }
   @media only screen and (max-width: 480px) {
     #toiawase {
-      margin-top: -30px;
-      padding-top: 30px; } }
+      margin-top: -180px;
+      padding-top: 180px; } }
 
 /*# sourceMappingURL=about-us.css.map */
