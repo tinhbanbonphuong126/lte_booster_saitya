@@ -8,7 +8,17 @@
     {{--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwlkTA1L6lLnp76nr6LZ22ebIXMXNxxUY&language=ja&region=JP"></script>--}}
     <link rel="stylesheet" href="{{ asset("css/about-us/about-us.css") }}" type="text/css" media="all"/>
     <style tyle="text/css">
-
+        input.error, textarea.error {
+            border-color: #f82020 !important;
+            -webkit-box-shadow: 0px 0px 2px 0px rgba(227, 20, 20, 1);
+            -moz-box-shadow: 0px 0px 2px 0px rgba(227, 20, 20, 1);
+            box-shadow: 0px 0px 2px 0px rgba(227, 20, 20, 1);
+            border: none;
+        }
+        .cell_form .after label.error {
+            color: #f82020;
+            margin-top: 7px;
+        }
     </style>
 @endsection
 
@@ -191,9 +201,7 @@
                                         お問い合わせ内容 <span class="mark_hitsuyou">＊</span>
                                     </div>
                                     <div class="after">
-                                    <textarea name="toiawase_content" id="toiawaseContent">
-
-                                    </textarea>
+                                    <textarea name="toiawase_content" id="toiawaseContent"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -244,6 +252,8 @@
 @endsection
 
 @section('script')
+    <script type="text/javascript" src="{{ asset("plugins/jquery_validator/jquery.validate.min.js") }}"></script>
+    <script type="text/javascript" src="{{ asset("js/validationConfig.js") }}"></script>
     <script type="text/javascript" src="{{ asset("js/about-us/about-us.js") }}"></script>
     <script type="text/javascript">
         <!--Javascript here-->

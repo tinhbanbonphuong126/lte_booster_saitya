@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'phamque.adnetplus@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'Admin Hosting'),
+        'name' => env('MAIL_FROM_NAME', 'Admin Server Hosting'),
     ],
 
     /*

@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\AboutUsMailable;
 use App\Repositories\Admin\BunjouchiRepository;
 use App\Repositories\Admin\RegionRepository;
 use App\Repositories\Admin\StationRepository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class PageController extends Controller
 {
@@ -32,9 +34,12 @@ class PageController extends Controller
     {
         $name = $request->get("name");
         $furigana = $request->get("furigana");
-        $mail_address = $request->get("name");
+        $mail_address = $request->get("mail_address");
         $tel_number = $request->get("tel_number");
         $toiawase_content = $request->get("toiawase_content");
+
+
+        Mail::to("tinhbanbonphuong126@gmail.com")->send(new AboutUsMailable($name, $furigana, $mail_address, $tel_number, $toiawase_content));
 
 
         return redirect()->route("home");
