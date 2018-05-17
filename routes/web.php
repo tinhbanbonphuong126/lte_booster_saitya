@@ -14,14 +14,18 @@
 use App\Repositories\Admin\BunjouchiRepository;
 
 
-Route::get("duplicate", function(BunjouchiRepository $bunjouchiRepository) {
-
-    $temp = $bunjouchiRepository->first()->toArray();
-
-    for ($i=0; $i<100; $i++) {
-        $bunjouchiRepository->create($temp);
-    }
-});
+//Route::get("make_hash", function() {
+//    return $password = Hash::make('123456');
+//});
+//
+//Route::get("duplicate", function(BunjouchiRepository $bunjouchiRepository) {
+//
+//    $temp = $bunjouchiRepository->first()->toArray();
+//
+//    for ($i=0; $i<100; $i++) {
+//        $bunjouchiRepository->create($temp);
+//    }
+//});
 
 Auth::routes();
 

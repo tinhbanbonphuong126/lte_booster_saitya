@@ -42,6 +42,7 @@ class PageController extends Controller
         $toiawase_content = $request->get("toiawase_content");
 
         if($mail_address) {
+//            Mail::to("phamque.adnetplus@gmail.com")->send(new AboutUsMailable($name, $furigana, $mail_address, $tel_number, $toiawase_content));
             Mail::to("post@adnet-web.com")->send(new AboutUsMailable($name, $furigana, $mail_address, $tel_number, $toiawase_content));
             return redirect()->route("home");
         }

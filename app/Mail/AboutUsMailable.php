@@ -50,7 +50,7 @@ class AboutUsMailable extends Mailable
      */
     public function build()
     {
-        $subject = "Mail From About Us Page";
+        $subject = "HPからのお問い合わせ";
 
         return $this->view('layouts.frontend.partial.template_mail.about_us_mailable')
                     ->with("template_mail_name", $this->template_mail_name)

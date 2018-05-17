@@ -55,7 +55,7 @@
 
             <div class="form-group has-feedback {{ $errors->has('name') ? ' has-error' : '' }}">
                 <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="ユーザーID">
-                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                <span style=" display: none" class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 {{--@if ($errors->has('email'))--}}
                     {{--<span class="help-block">--}}
                     {{--<strong>{{ $errors->first('email') }}</strong>--}}

@@ -178,7 +178,7 @@
         </tr>
         </tbody>
     </table>
-    <!--[if mso | IE]>      </td></tr></table>      <![endif]-->      <!--[if mso | IE]>
+    <!--[if mso | IE]>      </td></tr></table>      <![endif]-->                 <!--[if mso | IE]>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="800" align="center"
            style="width:800px;">
         <tr>
@@ -206,182 +206,6 @@
                                                 align="left">
                                                 <div style="cursor:auto;color:#000000;font-family:Merriweather, Georgia, serif;font-size:11px;line-height:22px;text-align:left;">
                                                     <p><span style="font-size:16px;">■お問い合わせ情報</span>
-                                                    </p></div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!--[if mso | IE]>      </td></tr></table>      <![endif]--></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    <!--[if mso | IE]>      </td></tr></table>      <![endif]-->      <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="800" align="center"
-           style="width:800px;">
-        <tr>
-            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">      <![endif]-->
-    <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" border="0">
-        <tbody>
-        <tr>
-            <td>
-                <div style="margin:0px auto;max-width:800px;">
-                    <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;"
-                           align="center" border="0">
-                        <tbody>
-                        <tr>
-                            <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:9px 0px 9px 0px;">
-                                <!--[if mso | IE]>
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                    <tr>
-                                        <td style="vertical-align:top;width:240px;">      <![endif]-->
-                                <div class="mj-column-per-40 outlook-group-fix"
-                                     style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;">
-                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td style="word-wrap:break-word;font-size:0px;padding:0px 20px 0px 20px;"
-                                                align="left">
-                                                <div style="cursor:auto;color:#000000;font-family:Merriweather, Georgia, serif;font-size:11px;line-height:22px;text-align:left;">
-                                                    <p><span style="font-size:14px;">ご用件</span></p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!--[if mso | IE]>      </td>
-                                <td style="vertical-align:top;width:360px;">      <![endif]-->
-                                <div class="mj-column-per-60 outlook-group-fix"
-                                     style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;">
-                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td style="word-wrap:break-word;font-size:0px;padding:0px 20px 0px 20px;"
-                                                align="left">
-                                                <div style="cursor:auto;color:#000000;font-family:Merriweather, Georgia, serif;font-size:11px;line-height:22px;text-align:left;">
-                                                    <p><span style="font-size:14px;">お客様から問い合わせい</span></p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!--[if mso | IE]>      </td></tr></table>      <![endif]--></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    <!--[if mso | IE]>      </td></tr></table>      <![endif]-->      <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="800" align="center"
-           style="width:800px;">
-        <tr>
-            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">      <![endif]-->
-    <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" border="0">
-        <tbody>
-        <tr>
-            <td>
-                <div style="margin:0px auto;max-width:800px;">
-                    <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;"
-                           align="center" border="0">
-                        <tbody>
-                        <tr>
-                            <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:9px 0px 9px 0px;">
-                                <!--[if mso | IE]>
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                    <tr>
-                                        <td style="vertical-align:top;width:240px;">      <![endif]-->
-                                <div class="mj-column-per-40 outlook-group-fix"
-                                     style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;">
-                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td style="word-wrap:break-word;font-size:0px;padding:0px 20px 0px 20px;"
-                                                align="left">
-                                                <div style="cursor:auto;color:#000000;font-family:Merriweather, Georgia, serif;font-size:11px;line-height:22px;text-align:left;">
-                                                    <p><span style="font-size:14px;">ご用件</span></p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!--[if mso | IE]>      </td>
-                                <td style="vertical-align:top;width:360px;">      <![endif]-->
-                                <div class="mj-column-per-60 outlook-group-fix"
-                                     style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;">
-                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td style="word-wrap:break-word;font-size:0px;padding:0px 20px 0px 20px;"
-                                                align="left">
-                                                <div style="cursor:auto;color:#000000;font-family:Merriweather, Georgia, serif;font-size:11px;line-height:22px;text-align:left;">
-                                                    <p><span style="font-size:14px;">{!! nl2br($toiawase_content) !!}}</span></p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!--[if mso | IE]>      </td></tr></table>      <![endif]--></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    <!--[if mso | IE]>      </td></tr></table>      <![endif]-->      <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="800" align="center"
-           style="width:800px;">
-        <tr>
-            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">      <![endif]-->
-    <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" border="0">
-        <tbody>
-        <tr>
-            <td>
-                <div style="margin:0px auto;max-width:800px;">
-                    <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;"
-                           align="center" border="0">
-                        <tbody>
-                        <tr>
-                            <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:9px 0px 9px 0px;">
-                                <!--[if mso | IE]>
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                    <tr>
-                                        <td style="vertical-align:top;width:800px;">      <![endif]-->
-                                <div class="mj-column-per-100 outlook-group-fix"
-                                     style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;">
-                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td style="word-wrap:break-word;font-size:0px;padding:10px 25px;padding-top:10px;padding-right:10px;">
-                                                <p style="font-size:1px;margin:0px auto;border-top:1px solid #000;width:100%;"></p>
-                                                <!--[if mso | IE]>
-                                                <table role="presentation" align="center" border="0" cellpadding="0"
-                                                       cellspacing="0"
-                                                       style="font-size:1px;margin:0px auto;border-top:1px solid #000;width:100%;"
-                                                       width="800">
-                                                    <tr>
-                                                        <td style="height:0;line-height:0;"> </td>
-                                                    </tr>
-                                                </table><![endif]--></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="word-wrap:break-word;font-size:0px;padding:0px 20px 0px 20px;"
-                                                align="left">
-                                                <div style="cursor:auto;color:#000000;font-family:Merriweather, Georgia, serif;font-size:11px;line-height:22px;text-align:left;">
-                                                    <p><span style="font-size:16px;">■お客様情報</span>
                                                     </p></div>
                                             </td>
                                         </tr>
@@ -641,6 +465,72 @@
         </tr>
         </tbody>
     </table>
-    <!--[if mso | IE]>      </td></tr></table>      <![endif]--></div>
+    <!--[if mso | IE]>      </td></tr></table>      <![endif]-->
+
+
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="800" align="center"
+           style="width:800px;">
+        <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">      <![endif]-->
+    <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" border="0">
+        <tbody>
+        <tr>
+            <td>
+                <div style="margin:0px auto;max-width:800px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;"
+                           align="center" border="0">
+                        <tbody>
+                        <tr>
+                            <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:9px 0px 9px 0px;">
+                                <!--[if mso | IE]>
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td style="vertical-align:top;width:240px;">      <![endif]-->
+                                <div class="mj-column-per-40 outlook-group-fix"
+                                     style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="word-wrap:break-word;font-size:0px;padding:0px 20px 0px 20px;"
+                                                align="left">
+                                                <div style="cursor:auto;color:#000000;font-family:Merriweather, Georgia, serif;font-size:11px;line-height:22px;text-align:left;">
+                                                    <p><span style="font-size:14px;">ご用件<span
+                                                                    style="color:#ff0033;">&#xFF0A;</span></span></p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--[if mso | IE]>      </td>
+                                <td style="vertical-align:top;width:360px;">      <![endif]-->
+                                <div class="mj-column-per-60 outlook-group-fix"
+                                     style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="word-wrap:break-word;font-size:0px;padding:0px 20px 0px 20px;"
+                                                align="left">
+                                                <div style="cursor:auto;color:#000000;font-family:Merriweather, Georgia, serif;font-size:11px;line-height:22px;text-align:left;">
+                                                    <p><span style="font-size:14px;">{!! nl2br($toiawase_content) !!}</span></p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--[if mso | IE]>      </td></tr></table>      <![endif]--></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!--[if mso | IE]>      </td></tr></table>      <![endif]-->
+
+</div>
 </body>
 </html>
