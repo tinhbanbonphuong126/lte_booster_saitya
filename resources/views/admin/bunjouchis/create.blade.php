@@ -35,6 +35,9 @@
     <script type="text/javascript" src="{{ asset("plugins/jquery_validator/jquery.validate.min.js") }}"></script>
     {{--<script type="text/javascript" src="{{ asset("plugins/jquery_validator/jquery.validate.file.js") }}"></script>--}}
     <script type="text/javascript" src="{{ asset("js/validationConfig.js") }}"></script>
+
+    <script type="text/javascript" src="{{ asset("plugins/inputmask/jquery.inputmask.bundle.js") }}"></script>
+
     {{--End Validation--}}
     <script type="text/javascript" src="{{ asset('plugins/chained/jquery.chained.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugins/xml_json/xml2json.js') }}"></script>

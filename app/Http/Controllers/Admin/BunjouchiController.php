@@ -95,7 +95,9 @@ class BunjouchiController extends AppBaseController
             $prices = $request->get("prices");
 
             foreach($prices as $price) {
-                $bunjouchi->prices()->save(new Price($price));
+                if($price["bangou"] && $price["description"]) {
+                    $bunjouchi->prices()->save(new Price($price));
+                }
             }
 
         }

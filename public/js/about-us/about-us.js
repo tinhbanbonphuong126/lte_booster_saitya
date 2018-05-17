@@ -1,5 +1,6 @@
 $(function () {
 
+
     function initial() {
         rules = {
             name: {
@@ -32,7 +33,6 @@ $(function () {
 
     }
 
-
     initial();
-    validateForm('#formSubmit', rules, messages);
+    validateFormAjax('#formSubmit', rules, messages);
 });

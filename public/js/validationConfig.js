@@ -42,6 +42,55 @@ function validateForm(formSelector, rules, messages) {
     });
 }
 
+function validateFormAjax(formSelector, rules, messages) {
+
+    $(formSelector).validate({
+        rules: rules,
+        messages: messages,
+        // errorClass: "err-msg",
+
+        // errorPlacement: function (error, element) {
+        //         error.insertAfter(element);
+        // },
+        //
+        // errorElement: "span",
+        invalidHandler: function (form, validator) {
+            // $('#btnSubmitForm').removeAttr('disabled'); // Enable submit button when form has errors
+            var errors = validator.numberOfInvalids();
+            if (errors) {
+                validator.errorList[0].element.focus();
+            }
+        },
+        submitHandler: function (form) {
+
+            $.ajax({
+                url: $("#formSubmit").attr("action"),
+                type: "POST",
+                data: $("#formSubmit").serialize(),
+                cache: false,
+                success: function(response) {
+
+                    console.log(response);
+
+                    $("#successModal").modal("show");
+
+                    setTimeout(function () {
+                        $("#successModal").modal("hide");
+                    }, 3000);
+
+                    $.LoadingOverlay("hide");
+                }
+
+            });
+
+            $.LoadingOverlay("show");
+
+            return false;
+        },
+
+    });
+}
+
 
 /*
  * Translated default messages for the jQuery validation plugin.

@@ -19,6 +19,11 @@
             color: #f82020;
             margin-top: 7px;
         }
+        #successModal .modal-dialog .modal-content .modal-body p {
+            text-align: center;
+            font-size: 22px;
+            height: 100px;
+        }
     </style>
 @endsection
 
@@ -249,10 +254,26 @@
         </div>
     </div>
 
+    {{--POP UP--}}
+    <div class="modal fade" id="successModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>お問い合わせありがとうございます。<br>
+                        送信が完了いたしました。</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 @endsection
 
 @section('script')
 
+    <script type="text/javascript" src="{{ asset("plugins/gasparesganga-jquery-loading-overlay/src/loadingoverlay.js") }}"></script>
     <script type="text/javascript" src="{{ asset("plugins/jquery_validator/jquery.validate.min.js") }}"></script>
     <script type="text/javascript" src="{{ asset("js/validationConfig.js") }}"></script>
     <script type="text/javascript" src="{{ asset("js/about-us/about-us.js") }}"></script>

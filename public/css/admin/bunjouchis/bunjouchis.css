@@ -123,3 +123,13 @@ input.error:focus, textarea.error:focus {
 label.error {
   color: #f82020;
 }
+
+
+.noticeNumber {
+  opacity: 1;
+  font-size: 10px;
+  color: red;
+}
+label#map_url-error.error {
+
+}

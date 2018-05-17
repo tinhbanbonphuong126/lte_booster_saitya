@@ -10,12 +10,21 @@ $(function () {
     handleDeleteBlock();
 
     getLocationAPI();
-    // formValidation();
+    formValidation();
 
+    inputMask();
 
 
 
     //Define function here.
+
+    function inputMask() {
+        $(".boundOutPrice").on("focus", ".prices_bangou", function () {
+
+            $(this).inputmask({"mask": "9", "repeat": 2, "greedy": false});
+
+        });
+    }
 
     function reset() {
 

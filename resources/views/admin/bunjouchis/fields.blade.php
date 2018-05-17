@@ -74,10 +74,17 @@
 </div>
 
 
-<div class="form-group col-sm-12">
+<div class="boundOutPrice form-group col-sm-12">
     {!! Form::label('kakaku', '価格:', ["style" => "font-weight: bold;"]) !!}
 
+    <div class="">
+
+    </div>
+
     <div class="bound_price">
+
+        <p class="noticeNumber">＊数字のみ</p>
+
         {{--Template Price--}}
         <script id="price-template" type="text/x-handlebars-template">
             @include("admin.bunjouchis.price")

@@ -19,5 +19,9 @@
     "lodash": "^4.17.4",
     "purifycss-webpack": "^0.7.0",
     "vue": "^2.1.10"
+  },
+  "dependencies": {
+    "gasparesganga-jquery-loading-overlay": "^2.1.3",
+    "inputmask": "^3.3.11"
   }
 }
