@@ -139,3 +139,8 @@ label.error {
   color: #000;
   background-color: #fff;
 }
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  border-radius: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}

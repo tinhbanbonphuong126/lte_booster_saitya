@@ -30,6 +30,9 @@
 @endsection
 
 @section('scripts')
+    <script type="text/javascript">
+        var create_edit = 0;
+    </script>
     <script type="text/javascript" src="{{ asset("plugins/geolocator-master/dist/geolocator.js") }}"></script>
     {{--Config JQuey Validation--}}
     <script type="text/javascript" src="{{ asset("plugins/jquery_validator/jquery.validate.min.js") }}"></script>
@@ -46,7 +49,6 @@
     <script type="text/javascript" src="{{ asset('js/admin/bunjouchis/create_edit.js') }}"></script>
 
     <script type="text/javascript">
-
         //Config for Map URL
         $("#map_url").fileinput({
             language: "ja",

@@ -118,6 +118,28 @@ $(function () {
         priceFocusoutHandle();
         initial();
         validateFormBunjouchi('#formSubmit', rules, messages);
+
+        if(create_edit) {
+            $("[name='map_url']").rules("remove");
+            $("[name='document_url']").rules("remove");
+            onceChangeHandleFile();
+        }
+    }
+
+    function onceChangeHandleFile() {
+        $("[name='map_url']").one("change", function () {
+            $(this).rules("add", {
+                required: true,
+                filesize: 5242880})
+        });
+
+
+        $("[name='document_url']").one("change", function () {
+            $(this).rules("add", {
+                required: true,
+                filesize: 5242880
+            })
+        });
     }
 
     function priceFocusoutHandle() {

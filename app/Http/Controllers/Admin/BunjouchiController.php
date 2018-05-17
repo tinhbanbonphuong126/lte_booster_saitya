@@ -178,6 +178,9 @@ class BunjouchiController extends AppBaseController
         //Handle File Upload
         $map_url = $request->file('map_url');
         $document_url = $request->file('document_url');
+
+//        dd($map_url);
+
         if ($map_url) {
 
             $name_map = time() . '_' . $map_url->getClientOriginalName();
@@ -224,8 +227,10 @@ class BunjouchiController extends AppBaseController
             $prices = $request->get("prices");
             $bunjouchi->prices()->delete();
 
-            foreach ($prices as $price) {
-                $bunjouchi->prices()->save(new Price($price));
+            if($prices) {
+                foreach ($prices as $price) {
+                    $bunjouchi->prices()->save(new Price($price));
+                }
             }
 
         }
