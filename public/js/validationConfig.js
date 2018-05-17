@@ -17,6 +17,10 @@ function addMethodValidator() {
 }
 
 
+$.validator.addMethod('filesize', function (value, element, param) {
+    return this.optional(element) || (element.files[0].size <= param)
+}, "サイズ5MB未満でなければなりません");
+
 
 
 function validateForm(formSelector, rules, messages) {
@@ -37,7 +41,56 @@ function validateForm(formSelector, rules, messages) {
             if (errors) {
                 validator.errorList[0].element.focus();
             }
+        }
+    });
+}
+
+
+function validateFormBunjouchi(formSelector, rules, messages) {
+
+    $(formSelector).validate({
+        rules: rules,
+        messages: messages,
+        // errorClass: "err-msg",
+
+        // errorPlacement: function (error, element) {
+        //         error.insertAfter(element);
+        // },
+        //
+        // errorElement: "span",
+        invalidHandler: function (form, validator) {
+            // $('#btnSubmitForm').removeAttr('disabled'); // Enable submit button when form has errors
+            var errors = validator.numberOfInvalids();
+            if (errors) {
+                validator.errorList[0].element.focus();
+            }
+
+
+            $.each($(".boundOutPrice .bound_price .m_loop .m_both input"), function (index, element) {
+                console.log(this);
+                if ($(this).val().trim() == "") {
+                    $(this).css("border", "1px solid red");
+                }
+            });
         },
+        submitHandler: function (form) {
+
+            var count = 0;
+
+            $.each($(".boundOutPrice .bound_price .m_loop .m_both input"),function(index, element) {
+                console.log(this);
+                if($(this).val().trim() == ""){
+                    $(this).css("border", "1px solid red");
+                    count++;
+                }
+            });
+
+            if(count) {
+                return false;
+            }
+
+            return true;
+        }
 
     });
 }

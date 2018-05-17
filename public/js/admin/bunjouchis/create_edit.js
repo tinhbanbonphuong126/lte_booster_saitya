@@ -115,8 +115,19 @@ $(function () {
 
     function formValidation()
     {
+        priceFocusoutHandle();
         initial();
-        validateForm('#formSubmit', rules, messages);
+        validateFormBunjouchi('#formSubmit', rules, messages);
+    }
+
+    function priceFocusoutHandle() {
+        $(".boundOutPrice .bound_price").on("focusout", ".m_loop .m_both input", function() {
+            if($(this).val().trim() == "") {
+                $(this).css("border", "1px solid red");
+            } else {
+                $(this).css("border", "1px solid #d2d6de");
+            }
+        });
     }
 
     function initial() {
@@ -128,10 +139,12 @@ $(function () {
                 }
             },
             map_url: {
-                required: true
+                required: true,
+                filesize: 5242880
             },
             document_url: {
-                required: true
+                required: true,
+                filesize: 5242880
             },
             address: {
                 required: true,
@@ -140,6 +153,12 @@ $(function () {
                 }
             },
             land_area: {
+                required: true,
+                normalizer: function (value) {
+                    return $.trim(value);
+                }
+            },
+            usage_area: {
                 required: true,
                 normalizer: function (value) {
                     return $.trim(value);

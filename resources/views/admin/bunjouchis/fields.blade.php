@@ -1,7 +1,7 @@
 <!-- Title Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('title', 'タイトル: ') !!}
-    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+    {!! Form::text('title', null, ['class' => 'form-control', 'maxlength' => 64]) !!}
 </div>
 
 <!-- Map Url Field -->
@@ -19,7 +19,7 @@
 <!-- Address Field -->
 <div class="form-group col-sm-12 handle_geo_result">
     {!! Form::label('address', '住所:') !!}
-    {!! Form::text('address', null, ['class' => 'form-control']) !!}
+    {!! Form::text('address', null, ['class' => 'form-control', 'maxlength' => 128]) !!}
 
     <input type="hidden" id="latitude" name="latitude" value="">
     <input type="hidden" id="longitude" name="longitude" value="">
@@ -28,13 +28,13 @@
 <!-- Land Area Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('land_area', '土地面積:') !!}
-    {!! Form::text('land_area', null, ['class' => 'form-control']) !!}
+    {!! Form::text('land_area', null, ['class' => 'form-control', 'maxlength' => 64]) !!}
 </div>
 
 <!-- Ground Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('ground', '地目:') !!}
-    {!! Form::text('ground', null, ['class' => 'form-control']) !!}
+    {!! Form::text('ground', null, ['class' => 'form-control', 'maxlength' => 32]) !!}
 </div>
 
 <!-- Total Parcel Field -->
@@ -46,31 +46,31 @@
 <!-- Construction Pay Rate Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('construction_pay_rate', '建ペイ率: ') !!}
-    {!! Form::text('construction_pay_rate', null, ['class' => 'form-control']) !!}
+    {!! Form::text('construction_pay_rate', null, ['class' => 'form-control', 'maxlength' => 32]) !!}
 </div>
 
 <!-- Floor Area Ratio Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('floor_area_ratio', '容積率') !!}
-    {!! Form::text('floor_area_ratio', null, ['class' => 'form-control']) !!}
+    {!! Form::text('floor_area_ratio', null, ['class' => 'form-control', 'maxlength' => 32]) !!}
 </div>
 
 <!-- Usage Area Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('usage_area', '用途地域:') !!}
-    {!! Form::text('usage_area', null, ['class' => 'form-control']) !!}
+    {!! Form::text('usage_area', null, ['class' => 'form-control', 'maxlength' => 32]) !!}
 </div>
 
 <!-- Drainage Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('drainage', '排水:') !!}
-    {!! Form::text('drainage', null, ['class' => 'form-control']) !!}
+    {!! Form::text('drainage', null, ['class' => 'form-control', 'maxlength' => 32]) !!}
 </div>
 
 <!-- Dealing Status Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('dealing_status', '取引態様:') !!}
-    {!! Form::text('dealing_status', null, ['class' => 'form-control']) !!}
+    {!! Form::text('dealing_status', null, ['class' => 'form-control', 'maxlength' => 32]) !!}
 </div>
 
 
