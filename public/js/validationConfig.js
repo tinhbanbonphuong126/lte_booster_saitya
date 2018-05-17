@@ -32,7 +32,7 @@ function validateForm(formSelector, rules, messages) {
         //
         // errorElement: "span",
         invalidHandler: function (form, validator) {
-            // $('.btn-submit').removeAttr('disabled'); // Enable submit button when form has errors
+            // $('#btnSubmitForm').removeAttr('disabled'); // Enable submit button when form has errors
             var errors = validator.numberOfInvalids();
             if (errors) {
                 validator.errorList[0].element.focus();

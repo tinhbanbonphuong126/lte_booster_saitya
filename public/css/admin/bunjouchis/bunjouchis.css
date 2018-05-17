@@ -110,4 +110,16 @@ input#status1 {
 }
 
 
-/*# sourceMappingURL=bunjouchis.css.map*/
+/*CSS more for validation*/
+input.error, textarea.error, select.error {
+  border-color: #f82020 !important;
+}
+input.error:focus, textarea.error:focus {
+  border-color: #f82020 !important;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(227, 20, 20, 1);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(227, 20, 20, 1);
+  box-shadow: 0px 0px 2px 0px rgba(227, 20, 20, 1);
+}
+label.error {
+  color: #f82020;
+}

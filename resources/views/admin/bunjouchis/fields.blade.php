@@ -140,7 +140,7 @@
     <label for="#">分譲地状態</label>
 
     <div>
-        <input type="radio" id="status0" name="status" @if(isset($bunjouchi) && $bunjouchi->status == 0) checked @endif value="0" class="radio-inline">
+        <input type="radio" id="status0" name="status" @if(isset($bunjouchi) && $bunjouchi->status == 0) checked @else checked @endif value="0" class="radio-inline">
         <label for="status0">分譲中</label>
 
         <input type="radio" id="status1" name="status" @if(isset($bunjouchi) && $bunjouchi->status == 1) checked @endif value="1" class="radio-inline">
@@ -151,5 +151,5 @@
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     <a href="{!! route('admin.bunjouchis.index') !!}" class="btn btn-default">戻る</a>
-    {!! Form::submit('保存', ['class' => 'btn btn-primary']) !!}
+    {!! Form::submit('保存', ['class' => 'btn btn-primary ']) !!}
 </div>

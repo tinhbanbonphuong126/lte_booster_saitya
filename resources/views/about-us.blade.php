@@ -207,7 +207,7 @@
                             </div>
 
                             <div class="bounce_submit">
-                                <button class="btn btn_submit_form" type="submit">送信する</button>
+                                <button class="btn btn_submit_form" id="btnSubmitForm" type="submit">送信する</button>
                             </div>
                         </form>
                     </div>

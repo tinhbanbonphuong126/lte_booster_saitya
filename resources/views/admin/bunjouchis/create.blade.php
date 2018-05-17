@@ -18,7 +18,7 @@
 
             <div class="box-body">
                 <div class="row">
-                    {!! Form::open(['route' => 'admin.bunjouchis.store', 'class' => 'form-horizontal', 'enctype' => 'multipart/form-data']) !!}
+                    {!! Form::open(['route' => 'admin.bunjouchis.store', 'class' => 'form-horizontal', 'enctype' => 'multipart/form-data', "id" => "formSubmit"]) !!}
 
                         @include('admin.bunjouchis.fields')
 
@@ -31,7 +31,11 @@
 
 @section('scripts')
     <script type="text/javascript" src="{{ asset("plugins/geolocator-master/dist/geolocator.js") }}"></script>
-
+    {{--Config JQuey Validation--}}
+    <script type="text/javascript" src="{{ asset("plugins/jquery_validator/jquery.validate.min.js") }}"></script>
+    {{--<script type="text/javascript" src="{{ asset("plugins/jquery_validator/jquery.validate.file.js") }}"></script>--}}
+    <script type="text/javascript" src="{{ asset("js/validationConfig.js") }}"></script>
+    {{--End Validation--}}
     <script type="text/javascript" src="{{ asset('plugins/chained/jquery.chained.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugins/xml_json/xml2json.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugins/bootstrap-fileinput/js/fileinput.js') }}"></script>

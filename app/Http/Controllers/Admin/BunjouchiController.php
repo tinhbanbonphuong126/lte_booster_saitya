@@ -101,7 +101,7 @@ class BunjouchiController extends AppBaseController
         }
 
 
-        Flash::success('Bunjouchi saved successfully.');
+        Flash::success('分譲地を保存しました。');
 
         return redirect(route('admin.bunjouchis.index'));
     }
@@ -118,7 +118,7 @@ class BunjouchiController extends AppBaseController
         $bunjouchi = $this->bunjouchiRepository->findWithoutFail($id);
 
         if (empty($bunjouchi)) {
-            Flash::error('Bunjouchi not found');
+            Flash::error('分譲地は存在がありません');
 
             return redirect(route('admin.bunjouchis.index'));
         }
@@ -138,7 +138,7 @@ class BunjouchiController extends AppBaseController
         $bunjouchi = $this->bunjouchiRepository->findWithoutFail($id);
 
         if (empty($bunjouchi)) {
-            Flash::error('Bunjouchi not found');
+            Flash::error('分譲地は存在がありません');
 
             return redirect(route('admin.bunjouchis.index'));
         }
@@ -246,7 +246,7 @@ class BunjouchiController extends AppBaseController
         $bunjouchi = $this->bunjouchiRepository->findWithoutFail($id);
 
         if (empty($bunjouchi)) {
-            Flash::error('Bunjouchi not found');
+            Flash::error('分譲地は存在がありません。');
 
             return redirect(route('admin.bunjouchis.index'));
         }
