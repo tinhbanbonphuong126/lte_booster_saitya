@@ -53,8 +53,8 @@
         <form method="post" id="formLogin" action="{{ url('/login') }}">
             {!! csrf_field() !!}
 
-            <div class="form-group has-feedback {{ $errors->has('email') ? ' has-error' : '' }}">
-                <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="メールアドレス">
+            <div class="form-group has-feedback {{ $errors->has('name') ? ' has-error' : '' }}">
+                <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="ユーザーID">
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 {{--@if ($errors->has('email'))--}}
                     {{--<span class="help-block">--}}
@@ -74,10 +74,10 @@
 
             </div>
 
-            <div class="form-group has-feedback {{ $errors->has('email') ? ' has-error' : '' }}">
-                @if ($errors->has('email'))
+            <div class="form-group has-feedback {{ $errors->has('name') ? ' has-error' : '' }}">
+                @if ($errors->has('name'))
                     <span class="help-block">
-                    <strong>{{ $errors->first('email') }}</strong>
+                    <strong>{{ $errors->first('name') }}</strong>
                 </span>
                 @endif
             </div>
